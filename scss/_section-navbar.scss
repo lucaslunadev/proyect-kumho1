@@ -1,0 +1,170 @@
+
+
+
+
+.section-navbar {
+    width: 100vw;
+    padding: 0px!important;
+
+
+    .navbar-brand{
+        img{
+            width: 100px
+        }
+    }
+    .nav-link{
+        .dropdown-toggle .show
+        {
+
+
+            border: none;
+        }
+
+    }
+
+
+
+
+
+    //hover en el navbar
+
+
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:focus,
+.navbar .dropdown-menu .dropdown-item:active {
+  background-color:rgba(0, 0, 0, 0.5); /* Elimina el color de fondo */
+  color: white !important; /* Mantiene el color de texto original */
+  border-left: $km-red 3px solid
+   ; /* Elimina cualquier borde */
+  /* Elimina la sombra */
+  outline: none !important; /* Elimina cualquier outline */
+}
+
+
+//xxxxxxxxxx
+
+    .nav-item:hover {
+        .nav-link {
+
+            color: white;
+
+
+
+        }
+
+        .dropdown-menu {
+
+            .dropdown-item:hover {}
+
+
+        }
+    }
+
+
+
+
+    .navbar {
+        backdrop-filter: blur(10px);
+        background-color: $km-dark-gray-blur ;
+
+
+    }
+
+    .dropdown-menu {
+        backdrop-filter: blur(10px);
+        background-color: $km-dark-gray-blur ;
+        margin-top: 12px;
+        border: none;
+    }
+}
+
+@media (max-width: 992px) {
+    ul.dropdown-menu.show {
+
+        .dropdown-menu {
+            backdrop-filter: blur(10px);
+            background-color: $km-dark-gray-blur-0;
+            border: none;
+            margin-top: 15px;
+        }
+    }
+}
+
+
+
+/* Ícono de menú desplegable normal */
+.dropdown-toggle::after {
+
+    font-size: 1.2em;
+    /* Ajusta el tamaño del ícono */
+    transition: transform .4s ease-in-out;
+}
+
+
+
+
+/* Gira el ícono cuando el menú desplegable está abierto */
+.dropdown-toggle.dropdown-toggle-diseños.show::after {
+    transform: rotate(180deg); //girar icono de menu desplegable solo de diseños, eliminar clase dropdown-toggle-diseño en caso de querer que todos los iconos del menú desplegable hagan la
+}
+
+
+.dropdown-toggle::before {
+    margin-right: 8px!important;
+
+
+    font-size: 1.2em;
+    /* Ajusta el tamaño del ícono */
+    /* Puede que necesites ajustar la altura de la línea para alinear el ícono verticalmente */
+    transition: transform .4s ease-in-out;
+
+
+}
+
+.dropdown-toggle.show::before {
+    transform: rotate(180deg);
+
+
+}
+
+
+
+
+@media (max-width: 576px) {
+    .dropdown-item::before {
+
+        transform: rotate(-90deg);
+
+    }
+    .dropdown-toggle::before {
+
+        font-size: 1.2em;
+        /* Ajusta el tamaño del ícono */
+        /* Puede que necesites ajustar la altura de la línea para alinear el ícono verticalmente */
+        transition: transform .4s ease-in-out;
+    }
+
+    .dropdown-toggle.show::before {
+        transform: rotate(90deg);
+    }
+
+
+
+    .dropdown-menu-submenu {
+
+        margin-left: 20px;
+        margin-right: 20px !important;
+
+
+        li {
+            left: 10px;
+        }
+
+
+
+
+
+    }
+
+
+}

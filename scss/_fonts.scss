@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../assets/fonts/Noto_Sans/NotoSans-VariableFont_wdth\,wght.ttf') ;
+  font-weight: 100 900; // Rango de peso de la fuente
+  font-style:normal; // Estilo normal
+}
+
+:root {
+  /* Tamaños de fuente mínimos, preferidos y máximos para cada nivel de encabezado y párrafos */
+  --fs-h1: clamp(1.75rem, 4vw + 1rem, 3rem); /* H1 - Grande para títulos principales */
+  --fs-h2: clamp(1.5rem, 3vw + 1rem, 2.5rem); /* H2 */
+  --fs-h3: clamp(1.25rem, 2vw + 1rem, 2.25rem); /* H3 */
+  --fs-h4: clamp(1.125rem, 1vw + 1rem, 2rem); /* H4 */
+  --fs-h5: clamp(1rem, 3vw + 1rem, 1.75rem); /* H5 */
+  --fs-h6: clamp(0.875rem, 2.5vw + 1rem, 1.5rem); /* H6 */
+  --fs-p: clamp(1rem, 2vw + 1rem, 1.125rem); /* P - Tamaño base para texto del cuerpo */
+}
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: var(--fs-h4); }
+h5 { font-size: var(--fs-h5); }
+h6 { font-size: var(--fs-h6); }
+p { font-size: var(--fs-p); }

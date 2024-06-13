@@ -1,0 +1,561 @@
+
+.home{
+
+
+
+.section-tecnologia-rendimiento-confort {
+  height:900px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
+}
+
+//sombras internas
+.rendimiento{
+  border-radius:  1.25rem;
+
+  box-shadow: inset 0 0 100px black
+}
+.confort{
+  border-radius:  1.25rem;
+
+box-shadow: inset 0 0 600px black
+}
+.tecnologia{
+  border-radius: 1.25rem;
+
+box-shadow: inset 0 0 600px black
+}
+
+.section-tecnologia-rendimiento-confort div {
+  color: $light;
+  display: flex;
+  flex-direction: column;
+  justify-content: end; //posicionar caja de texto al al final a la izquierda
+
+}
+
+.rendimiento {
+  grid-area: 1 / 2 / 3 / 3;
+  ;
+  /*   background-image: url(../assets/images/img-tec-ren-conf/img-rendimientoo.jpg);
+ */
+  background-size: cover;
+  background-position: center;
+  // transition: 2s  ease-in-out!important;
+
+
+
+
+
+}
+
+.rendimiento:hover {
+
+  animation: zoom;
+
+
+}
+
+@keyframes zoom {
+
+
+  0% {
+    background-size: 100% !important;
+  }
+
+  50% {
+    background-size: 150%;
+  }
+
+  100% {
+    background-size: 120% !important;
+  }
+}
+
+.tecnologia {
+  grid-area: 1 / 1 / 2 / 2;
+  /*   background-image: url(../assets/images/img-tec-ren-conf/img-tecnologia.jpg);
+ */
+  background-size: cover;
+  background-position: center;
+
+}
+
+.confort {
+  grid-area: 2 / 1 / 3 / 2;
+  /*   background-image: url(../assets/images/img-tec-ren-conf/img-confort.jpg);
+ */
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+
+
+.section-tecnologia-rendimiento-confort {
+
+  .rendimiento,
+  .tecnologia,
+  .confort {
+
+    position: relative;
+    overflow: hidden;
+
+    .contenedor-blur {
+      backdrop-filter: blur(3px);
+      background-color: $km-black-blur-0 ;
+      margin-bottom: 10px;
+      padding: 5px;
+      padding-left: 10px;
+      width: 300px;
+      display: flex;
+      /* posicionamiento al final del div */
+      align-items: end;
+    }
+
+    h2 {
+      margin-bottom: -5px;
+    }
+
+    span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: transform 0.3s ease;
+
+      /*         font-size: 30px;*/
+
+
+      // El ícono de chevron simple es visible
+      .bi-chevron-right {
+        left: px; //valor -5px recomendable primer icon pegado a saber más
+
+        visibility: visible;
+        transition: transform 0.3s ease;
+        position: absolute;
+      }
+
+      // Inicialmente, el ícono de doble chevron es invisible pero ocupa espacio
+      .bi-chevron-double-right {
+        visibility: hidden;
+        transition: transform 0.3s ease;
+        position: absolute;
+
+      }
+
+
+
+      // Al hacer hover sobre span
+      &:hover {
+        transform: translateX(10px); //Desplaza texto saber más e iconos a la derecha .
+
+        // Hace invisible el ícono de chevron simple
+        .bi-chevron-right {
+          visibility: hidden;
+        }
+
+        // Hace visible el ícono de doble chevron y comienza la animación
+        .bi-chevron-double-right {
+          visibility: visible;
+          animation: side-to-side 1.5s ease-in-out infinite;
+        }
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+  .rendimiento::before {
+    background-image: url(../assets/images/section-tecnologia-rendimiento-confort/img-rendimiento.webp);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    content: '';
+    transition: transform 0.5s ease-in-out;
+    z-index: -1; //mantener la lamina detras del contenido
+
+  }
+
+  .tecnologia::before {
+    background-image: url(../assets/images/section-tecnologia-rendimiento-confort/img-tecnologia.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    content: '';
+    transition: transform 0.5s ease-in-out;
+    z-index: -1; //mantener la lamina detras del contenido
+  }
+
+
+
+
+  .confort::before {
+    background-image: url(../assets/images/section-tecnologia-rendimiento-confort/img-confort.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    content: '';
+    transition: transform .5s ease-in-out;
+    z-index: -1;
+    /* Mantener la lámina detrás del contenido */
+  }
+
+
+
+
+
+
+
+
+
+  // section de animacion hover y escalado  // section de animacion hover lamina oscura
+
+
+  .rendimiento:hover::before {
+    transform: scale(1.1);
+    /* Ajusta el factor de escala según lo desees */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    content: '';
+    background-image: url(../assets/images/section-tecnologia-rendimiento-confort/img-rendimiento.webp);
+
+    transition: transform 0.5s ease-in-out;
+    z-index: -1; //mantener la lamina detras del contenido
+  }
+
+  .tecnologia:hover::before {
+    transform: scale(1.1);
+    /* Ajusta el factor de escala según lo desees */
+    position: absolute;
+    width: 100%;
+    background-image: url(../assets/images/section-tecnologia-rendimiento-confort/img-tecnologia.jpg);
+
+    height: 100%;
+    background-size: cover;
+    content: '';
+    transition: transform 0.5s ease-in-out;
+    z-index: -1; //mantener la lamina detras del contenido
+  }
+
+
+  .confort:hover::before {
+    transform: scale(1.1);
+    /* Ajusta el factor de escala según lo desees */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/section-tecnologia-rendimiento-confort/img-confort.jpg);
+
+    background-size: cover;
+    content: '';
+    transition: transform 0.5s ease-in-out;
+    z-index: -1; //mantener la lamina detras del contenido
+  }
+
+
+
+
+}
+
+// Define la animación de lado a lado.
+@keyframes side-to-side {
+
+
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+
+
+
+@media (max-width: 991px) {
+
+
+
+
+
+  .section-tecnologia-rendimiento-confort {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100vw;
+    max-width: 100%;
+
+
+
+
+
+
+    .rendimiento,
+    .tecnologia,
+    .confort {
+      height: 7000px;
+      /* poner altura con otros valores */
+
+
+
+
+      .contenedor-blur {
+        width: 200px;
+
+        .text-confort {
+          left: -35px;
+
+        }
+
+        .container-title-span {
+
+          position: relative;
+
+
+
+          h2 {
+            font-size: 20px;
+            margin-bottom: -2px;
+          }
+
+          span {
+            font-size: 15px;
+
+
+            .bi-chevron-right {
+              position: absolute;
+              //bottom: -2px; para acomodar icon en modo mobile
+
+            }
+
+            .bi-chevron-double-right {
+
+              //bottom: -2px; para acomodar icon en modo mobile
+
+            }
+          }
+
+
+
+        }
+
+
+
+      }
+
+
+
+
+
+
+    }
+  }
+}
+
+
+
+
+
+//MODALES
+.banner-video-modal {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* Establece una altura específica o usa padding-top para mantener la proporción */
+  height: 50vh;
+  /* Altura deseada del contenedor del video */
+}
+
+.banner-video-modal iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: auto;
+  transform: translate(-50%, -50%) scale(1.5);
+  /* Ajusta el factor de escala según sea necesario */
+  /* El factor de escala aumenta el tamaño del video para cubrir el contenedor */
+}
+
+
+.modal-content {
+  h5 {
+    font-weight: 900;
+  }
+
+  h6 {
+    font-weight: 700;
+  }
+
+}
+
+
+.modal-content {
+  /* Inicialmente invisible */
+  opacity: 0;
+  transition: opacity .5s ease;
+  transition-delay: .5s;
+  /* Ajusta este valor al retraso deseado */
+}
+
+.modal.show .modal-content {
+  opacity: 1;
+}
+
+
+
+
+
+@media (min-width: 992px) {
+
+
+
+  .img-modal-confort {
+
+    background-size: cover;
+    width: 4000px;
+    background-image: url(../assets/images/img-tec-ren-conf/img-confort-modal-vertical.png);
+
+  }
+  .img-modal-tecnologia {
+
+    background-size: cover;
+    width: 4000px;
+    background-image: url(../assets/images/img-tec-ren-conf/img-tecnologia-modal-vertical-1.png);
+
+  }
+  .img-modal-rendimiento {
+
+    background-size: cover;
+    width: 4000px;
+    background-image: url(../assets/images/img-tec-ren-conf/img-rendimiento-vertical-modal-1.png);
+
+  }
+
+  .modal-dialog {
+    max-width: 1200px;
+    margin-top: 100px;
+
+
+
+    .modal-body {
+      overflow-y: scroll;
+
+      height: 500px;
+
+
+    }
+
+    .modal-content {
+      flex-direction: row;
+      max-width: 1100px;
+
+
+
+
+
+      .modal-header {}
+    }
+
+    .modal-body {}
+
+    .modal-footer {}
+  }
+
+
+}
+
+
+
+@media (max-width: 992px) {
+
+
+
+
+  .img-modal-confort {
+    background-size: cover;
+    background-position: center;
+
+    background-image: url(../assets/images/img-tec-ren-conf/img-rendimiento-modal-2.jpg);
+    height: 170px
+  }
+  .img-modal-rendimiento {
+    background-size: cover;
+    background-position: center;
+
+    background-image: url(../assets/images/img-tec-ren-conf/img-rendimiento-modal-2.jpg);
+    height: 170px
+  }
+
+  .img-modal-tecnologia {
+    background-size: cover;
+    background-position: center;
+
+    background-image: url(../assets/images/img-tec-ren-conf/img-rendimiento-modal-2.jpg);
+    height: 170px
+  }
+
+
+  .modal-dialog {
+    max-width: 100%;
+    margin-top: 70px;
+
+
+
+    .modal-body {
+      overflow-y: scroll;
+      height: 340px;
+
+
+
+    }
+
+    .modal-content {
+      display: block;
+
+
+
+
+
+    }
+
+
+
+.modal-header{
+
+
+  h5{
+    font-size: 25px;
+
+  }
+}
+
+
+  }
+
+}
+
+
+
+}

@@ -1,0 +1,220 @@
+
+
+.ecsta{
+    .skewed {
+        mask-image: linear-gradient(black 50%, transparent, );
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 700px;
+        z-index: 0;
+        transform-origin: top right;
+        background-image: url(../assets/images/ecsta/banner-ecsta-3.png);
+        background-size: cover;
+        transform: skewY(6deg);
+
+
+
+
+
+    }
+
+
+    .container-logo {
+        display: flex;
+        justify-content: center;
+
+
+        .img-logo-ecsta {
+            width: 450px;
+
+
+            margin-top: 10px;
+            --animate-duration: 2.5s;
+
+
+
+        }
+    }
+
+    .animate__animated.animate__bounce {
+        --animate-duration: 5s;
+    }
+
+
+
+    .container-tarjetas-diseños {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 50px;
+
+        .tarjeta {
+
+
+            text-align: center;
+            width: 250px;
+
+            background-color: white;
+            cursor: pointer;
+
+
+            P {
+                font-weight: bolder;
+                font-size: 2rem;
+
+                margin-bottom: 0;
+            }
+
+            p::before {
+                content: "";
+                display: block;
+                width: 15px;
+                height: 20px;
+                background-color: #ef0010;
+                transform: skew(-45deg, 0);
+                left: 10px;
+                position: relative;
+            }
+        }
+
+        img {
+            padding: 20px;
+
+
+        }
+    }
+
+
+
+    .container-diseños {
+        padding: 20px;
+
+        .buttons {
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+
+            padding-top: 0px;
+            padding-bottom: 50px;
+
+            .btn {
+                width: 100px;
+            }
+        }
+
+    }
+
+    .container-padre-caracteristicas {}
+
+
+
+    .container-img-ecsta {
+        margin: 0 auto;
+        text-align: center;
+
+
+
+    }
+
+
+    .ectsa {}
+
+    .container-neumatico {
+        img {
+            width: 300px;
+        }
+
+    }
+
+
+
+
+
+
+    .caracteristicas-neumaticos {
+
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+    }
+
+
+
+    .container-descripcion {
+
+
+        margin: 40px auto;
+        width: 80%;
+
+
+        p {
+            font-size: 40px;
+            margin-bottom: 0px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    h4 {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+
+
+
+    .container-caracteristicas {
+        width: 50%;
+        text-align: justify;
+
+        h2 {
+            font-size: 80px;
+            font-weight: bold;
+            color: white;
+        }
+
+        ul {
+            margin-bottom: 0px;
+
+            line-height: 35px;
+            font-size: 15px;
+            padding: 40px;
+
+        }
+    }
+
+
+    @media screen and (max-width: 1024px) {
+        .caracteristicas-neumaticos {
+            display: block;
+
+            p {
+                font-size: 15px;
+                margin-bottom: 0px;
+                width: 100%;
+            }
+
+
+            .container-diseños {
+                .buttons {}
+            }
+        }
+
+
+    }
+
+
+
+
+    @media screen and (max-width: 320px) {
+        .container-banner-ecsta {}
+
+
+
+    }
+
+}

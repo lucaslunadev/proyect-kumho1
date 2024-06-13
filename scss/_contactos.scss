@@ -1,0 +1,225 @@
+.contactos {
+
+
+    .contact-section {
+margin-top: 50px;
+        h2 {
+            text-align: center;
+            font-weight: 700;
+
+            img {
+                width: 2rem;
+            }
+
+        }
+    }
+
+
+    color: #fff;
+
+
+
+    .skewed {
+        background-image: url(../assets/images/sitio-autos/VW\ Polo\ GTS\ MY22\ \(1\).jpg);
+        background-position: center;
+        height: 400px;
+        margin-top: 60px;
+    }
+
+    .contact-section {
+        max-width: 600px;
+
+
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px 20px;
+        /*         background-color:$km-red ;
+ */
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+
+    button:hover {
+        /*         background-color: #0056b3;
+ */
+    }
+
+
+    #provincia {
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer !important;
+
+
+    }
+
+    .provincia {}
+
+
+    #adjunto {}
+
+
+    .social-icons {
+        /*         margin-top: 20px;
+ */
+    }
+
+
+
+    .social-icons a {
+        display: inline-block;
+        margin: 0 10px;
+
+
+        text-decoration: none;
+        color: #fff;
+
+
+
+    }
+
+    /*    /*
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+    } */
+
+
+    @media screen and (max-width: 600px) {
+
+
+
+
+    .skewed {
+        background-image: url(../assets/images/sitio-autos/VW\ Polo\ GTS\ MY22\ \(1\).jpg);
+        background-size: 300%;
+        background-position: 60%;
+        height: 250px;
+        margin-top: 60px;
+    }
+
+        .form-gral {
+            padding: 35px;
+
+
+
+
+
+        }
+
+
+
+
+
+
+        .contact-section {
+            h2 {
+
+
+                img {
+                    width: 2.4rem;
+                    margin-right: 10px;
+                }
+
+                font-size: 40px;
+
+            }
+
+            margin-top: 100px;
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+    .tipo-persona {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    /*  #empresa {
+        margin-left: -50px !important;
+    }
+ */
+
+
+    #nombre-empresa {
+        display: none;
+    }
+
+    .container-empresa {
+        display: flex;
+        gap: 20px;
+    }
+
+    .container-particular {
+        display: flex;
+        gap: 20px;
+
+    }
+
+
+    .form-group {
+        label {
+            p {
+                font-size: 25px;
+                padding-bottom: 20px;
+            }
+        }
+
+
+    }
+
+
+    #particular {
+        width: 25px;
+        cursor: pointer;
+    }
+
+    #empresa {
+        width: 25px;
+
+        cursor: pointer;
+
+    }
+
+
+    .social-icons {
+        text-align: center;
+        margin-top: 40px;
+    }
+}

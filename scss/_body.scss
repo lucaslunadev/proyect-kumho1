@@ -1,0 +1,86 @@
+body{
+
+    font-family: 'Noto Sans';
+    background-color: $km-black;
+
+
+        user-select: none; /* Disable text selection */
+        -webkit-user-drag: none; /* Disable dragging on WebKit browsers */
+        -moz-user-select: none; /* Disable text selection on Firefox */
+        -ms-user-select: none; /* Disable text selection on Internet Explorer/Edge */
+
+
+
+    $border-radius: 0;
+
+
+    //para no hacer zoom
+        touch-action: manipulation;
+
+
+
+
+}
+
+.navbar{
+    padding: 10px;
+}
+
+
+.home{
+    margin-top: 60px;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+
+
+/* Para WebKit browsers */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color de fondo de la pista de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color de fondo del control deslizante de la barra de desplazamiento */
+    border-radius: 6px; /* Bordes redondeados del control deslizante */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color de fondo del control deslizante al pasar el mouse */
+}
+
+/* Para Firefox */
+* {
+    scrollbar-width: thin; /* "auto" o "thin" */
+    scrollbar-color: #888 #f1f1f1; /* thumb and track colors */
+}
+
+.btn{
+    border-radius: 10px!important;
+
+}
+
+
+
+
+.swiper-slide {
+    user-select: none; /* Disable text selection */
+    -webkit-user-drag: none; /* Disable dragging on WebKit browsers */
+    -moz-user-select: none; /* Disable text selection on Firefox */
+    -ms-user-select: none; /* Disable text selection on Internet Explorer/Edge */
+}
+
+
+
+
+
+.modal-content{
+    border-radius: 15px!important;
+}

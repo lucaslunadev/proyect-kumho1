@@ -1,0 +1,824 @@
+.autos {
+    padding-top: 0px;
+    background-color: black;
+
+
+    .skewed {
+        position: relative;
+        width: 100%;
+        height: 700px;
+        background: url('../assets/images/sitio-autos/VW\ Polo\ GTS\ MY22\ \(1\).jpg');
+        background-size: cover;
+        z-index: 1;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        /* Alinea los elementos al inicio */
+
+        /* No es necesario pero establece el contexto del stack para z-index */
+    }
+
+    .skewed::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(178deg,
+                transparent 35%,
+                /* Ajusta para controlar dónde comienza el desvanecimiento */
+                black 90%
+                /* Cambia a 100% para que el blanco cubra la parte inferior */
+            );
+        z-index: -1;
+    }
+
+
+
+
+    .text-banner {
+        color: #fff !important;
+
+        /* Asegura que el texto aparece sobre el efecto de desvanecimiento */
+        h2 {
+            text-shadow: 0px 5px 5px rgba(2, 0, 0, 5);
+
+
+
+
+            /* Tamaño base + un porcentaje del ancho de la ventana */
+            /* No necesitas 'position: relative;' aquí, ya que su contenedor '.text-banner' ya es absoluto */
+        }
+
+        p {
+            text-shadow: 0px 5px 5px rgba(0, 0, 0, 1);
+
+
+
+            /* Estilos adicionales para 'p' si son necesarios */
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Media queries para ajustar la máscara en pantallas más pequeñas */
+    @media (min-width: 1200px) {}
+
+
+
+
+    @media (max-width: 1200px) {
+        .skewed::after {
+
+            background: linear-gradient(177deg,
+                    transparent 75%,
+                    /* Ajusta para controlar dónde comienza el desvanecimiento */
+                    black 90%
+                    /* Cambia a 100% para que el blanco cubra la parte inferior */
+                );
+        }
+    }
+
+
+
+
+    @media (max-width: 768px) {
+
+        .skewed::after {
+            background: linear-gradient(177deg,
+                    transparent 75%,
+                    /* Ajusta para controlar dónde comienza el desvanecimiento */
+                    black 90%
+                    /* Cambia a 100% para que el blanco cubra la parte inferior */
+                );
+        }
+    }
+
+
+
+    @media (max-width: 480px) {
+
+
+
+
+        .skewed::after {
+            height: 500px;
+
+            background: linear-gradient(177deg,
+                    transparent 75%,
+                    /* Ajusta para controlar dónde comienza el desvanecimiento */
+                    black 90%
+                    /* Cambia a 100% para que el blanco cubra la parte inferior */
+                );
+        }
+    }
+
+
+
+
+
+
+    .carousel-ecsta {
+        width: 56%;
+    }
+
+    .carousel-solus {
+        width: 40%;
+
+    }
+
+    .carousel-ecowing {
+        width: 25%;
+    }
+
+
+
+
+    .swiper-slide img {
+        width: 140px;
+        padding: 5px;
+    }
+
+
+
+
+
+    .swiper-slide {
+
+        box-sizing: border-box;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+
+
+
+    .modelo-dis {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+
+    .modelo-dis .logo {
+        width: 50%;
+    }
+
+
+
+
+
+
+    .modelo-dis p {
+        font-weight: 1000;
+        font-style: italic;
+        margin: 5px;
+
+    }
+
+
+
+
+    .img-neumatico {
+
+        transition: transform 0.3s ease, filter 0.3s ease;
+        cursor: pointer;
+
+    }
+
+
+
+
+
+
+
+    .img-neumatico:hover {
+        transform: translateY(-2%);
+    }
+
+
+
+    .card-fondo {
+        position: relative;
+
+        text-align: center;
+
+
+    }
+
+
+    /* sombra debajo del neumatico*/
+    .card-fondo::after {
+        content: '';
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        /* Centrar la sombra horizontalmente */
+        transform: translateX(-50%) scaleY(-1);
+        width: 50%;
+        /* Ancho de la sombra */
+        height: 4%;
+        /* Altura de la sombra */
+        background: rgba(0, 0, 0, 1);
+        filter: blur(0.25rem);
+        /* Color de la sombra */
+        border-radius: 50%;
+        opacity: 0;
+        /* Inicialmente oculto */
+        transition: opacity 0.3s ease;
+        /* Transición suave para la opacidad */
+        z-index: 9999;
+
+    }
+
+
+
+
+
+
+
+    .card-fondo.hover::after {
+        opacity: 1;
+        /* Hacer visible la sombra */
+        /* z-index: 99999; Si es necesario, ajusta según el contexto */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .swiper-pagination-bullet {
+        opacity: 1;
+        position: relative;
+        width: 30px;
+        /* Anchura del indicador */
+        height: 2px;
+        /* Altura del indicador */
+        margin: 5px 5px;
+        /* Espacio entre indicadores */
+        /*     text-indent: -999px;*/
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.5);
+        /* Color de fondo de los indicadores */
+        border-radius: 0px;
+        /* Bordes ligeramente redondeados */
+        transition: background-color .3s;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #fff
+    }
+
+    .swiper-pagination {
+        top: 15px;
+        position: relative;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 10px 4px
+    }
+
+
+
+
+
+
+
+
+
+
+
+    //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+    //media query slider de neumaticos
+
+
+    @media screen and (max-width: 599px) {
+        .carousel-ecowing {
+            width: 65%
+        }
+
+        .carousel-solus {
+            width: 65%
+        }
+
+        .carousel-ecsta {
+            width: 65%
+        }
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 899px) {
+        .carousel-ecowing {
+            width: 80%
+        }
+
+        .carousel-solus {
+            width: 80%
+        }
+
+        .carousel-ecsta {
+            width: 80%;
+        }
+    }
+
+    @media screen and (min-width: 900px) and (max-width: 1199px) {
+        .carousel-ecowing {
+            width: 80%
+        }
+
+        .carousel-solus {
+            width: 80%
+        }
+
+        .carousel-ecsta {
+            width: 80%
+        }
+    }
+
+    //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+    //media querys controles indicadores de sliders
+
+
+
+
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        color: rgb(146, 150, 146);
+        --swiper-navigation-size: 20px;
+
+        transform: translateY(-50%)!important;
+
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+    }
+
+
+
+    .swiper-button-prev:hover {
+
+        color: rgb(232, 232, 232)
+    }
+
+
+    .swiper-button-next:hover {
+        color: rgb(232, 232, 232)
+    }
+
+
+
+    .swiper-button-prev,.swiper-rtl .swiper-button-next {
+       /*  left:  17%;
+        right: auto; */
+/*         margin: 0 15%;
+ */    }
+
+
+
+.swiper-button-next,.swiper-rtl .swiper-button-prev {
+ /*    right: 17%;
+    left: auto */
+}
+
+
+
+    .swiper {
+        position: static !important;
+    }
+
+
+    @media screen and (max-width: 1400px) {
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: none;
+
+        }
+
+
+    }
+
+
+
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: 19%;
+        left: auto
+    }
+
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: 19%;
+        right: auto
+    }
+
+
+
+    @media screen and (min-width: 500px) and (max-width:1000px) {
+
+
+
+    }
+
+
+
+
+
+    //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+    @media only screen and (max-width: 768px) and (orientation: landscape) {
+
+
+        .skewed {
+
+            background-position: center 20px !important;
+            /* Alinea los elementos al inicio */
+
+            /* No es necesario pero establece el contexto del stack para z-index */
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+
+
+        .skewed {
+            height: 500px;
+            background-repeat: no-repeat;
+            background-position: center 10px !important;
+            background-size: 200%
+                /* Alinea los elementos al inicio */
+
+                /* No es necesario pero establece el contexto del stack para z-index */
+        }
+
+
+        .skewed::after {
+            height: 500px;
+
+            background: linear-gradient(177deg,
+                    transparent 75%,
+                    /* Ajusta para controlar dónde comienza el desvanecimiento */
+                    black 90%
+                    /* Cambia a 100% para que el blanco cubra la parte inferior */
+                );
+        }
+
+        .text-banner {
+
+            position: absolute;
+            color: #171717;
+            z-index: 2;
+            top: 10%;
+            padding: 20px;
+
+
+
+            /* Asegura que el texto aparece sobre el efecto de desvanecimiento */
+            h2 {
+
+                font-size: 1.5rem;
+
+                font-weight: 900;
+                text-align: center;
+
+                /* Tamaño base + un porcentaje del ancho de la ventana */
+                /* No necesitas 'position: relative;' aquí, ya que su contenedor '.text-banner' ya es absoluto */
+            }
+
+            p {
+                text-align: center;
+                font-size: 1rem;
+
+                font-weight: 300;
+                /* Estilos adicionales para 'p' si son necesarios */
+            }
+        }
+
+
+
+
+
+        .carousel-ecsta {
+            width: 70%;
+        }
+
+        .carousel-solus {
+            width: 70%;
+
+        }
+
+        .carousel-ecowing {
+            width: 70%;
+        }
+
+    }
+
+
+
+    @media screen and (min-width: 500px) and (max-width:1000px) {
+
+
+        .skewed {
+            height: 500px;
+            background-repeat: no-repeat;
+            background-position: center 15%;
+
+
+
+            /* Alinea los elementos al inicio */
+
+            /* No es necesario pero establece el contexto del stack para z-index */
+        }
+
+
+        .skewed::after {
+            height: 500px;
+
+            background: linear-gradient(177deg,
+                    transparent 75%,
+                    /* Ajusta para controlar dónde comienza el desvanecimiento */
+                    black 90%
+                    /* Cambia a 100% para que el blanco cubra la parte inferior */
+                );
+        }
+
+        .text-banner {
+
+            position: absolute;
+            color: #171717;
+            z-index: 2;
+            width: auto;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 30%;
+
+
+
+            /* Asegura que el texto aparece sobre el efecto de desvanecimiento */
+            h2 {
+                width: 550px;
+
+                font-size: 2rem;
+
+                font-weight: 900;
+                text-align: center;
+
+                /* Tamaño base + un porcentaje del ancho de la ventana */
+                /* No necesitas 'position: relative;' aquí, ya que su contenedor '.text-banner' ya es absoluto */
+            }
+
+            p {
+                width: 550px;
+                text-align: center;
+                font-size: 1rem;
+
+                font-weight: 300;
+                /* Estilos adicionales para 'p' si son necesarios */
+            }
+        }
+
+    }
+
+
+
+
+    @media screen and (min-width: 1000px) and (max-width: 1370px) {
+
+
+        .skewed {
+            height: 600px;
+            background-repeat: no-repeat;
+            background-position: center 20%;
+
+            /* Alinea los elementos al inicio */
+
+            /* No es necesario pero establece el contexto del stack para z-index */
+        }
+
+
+        .skewed::after {
+            height: 600px;
+
+            background: linear-gradient(177deg,
+                    transparent 75%,
+                    /* Ajusta para controlar dónde comienza el desvanecimiento */
+                    black 90%
+                    /* Cambia a 100% para que el blanco cubra la parte inferior */
+                );
+        }
+
+
+
+
+
+
+        .text-banner {
+
+
+            position: absolute;
+            color: #171717;
+            z-index: 2;
+
+
+
+
+            top: 30%;
+
+            width: auto;
+            ;
+
+
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+
+
+            /* Asegura que el texto aparece sobre el efecto de desvanecimiento */
+            h2 {
+                width: 550px;
+
+                font-size: 2.6rem;
+
+
+
+
+
+                font-weight: 900;
+                text-align: center;
+
+                /* Tamaño base + un porcentaje del ancho de la ventana */
+                /* No necesitas 'position: relative;' aquí, ya que su contenedor '.text-banner' ya es absoluto */
+            }
+
+            p {
+                width: 550px;
+                text-align: center;
+
+                font-weight: 200;
+                /* Estilos adicionales para 'p' si son necesarios */
+            }
+        }
+
+
+
+
+        .carousel-ecsta {
+            width: 60%;
+        }
+
+        .carousel-solus {
+            width: 37%;
+
+        }
+
+        .carousel-ecowing {
+            width: 37%;
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (min-width: 1371px) {
+
+        .skewed {
+            height: 650px;
+            background-repeat: no-repeat;
+            background-position: center 35%;
+
+            /* Alinea los elementos al inicio */
+
+            /* No es necesario pero establece el contexto del stack para z-index */
+        }
+
+
+        .skewed::after {
+            height: 650px;
+
+            background: linear-gradient(178deg,
+                    transparent 75%,
+                    /* Ajusta para controlar dónde comienza el desvanecimiento */
+                    black 90%
+                    /* Cambia a 100% para que el blanco cubra la parte inferior */
+                );
+        }
+
+
+
+
+        .text-banner {
+
+
+            color: #171717;
+            z-index: 2;
+            width: auto;
+            top: 0;
+            position: absolute;
+            margin-top: 110px;
+            right: 200px;
+
+
+            /* Asegura que el texto aparece sobre el efecto de desvanecimiento */
+            h2 {
+                width: 550px;
+
+                margin-bottom: 20px;
+                font-weight: 900;
+                font-size: 3rem;
+                text-align: center;
+
+                /* Tamaño base + un porcentaje del ancho de la ventana */
+                /* No necesitas 'position: relative;' aquí, ya que su contenedor '.text-banner' ya es absoluto */
+            }
+
+            p {
+                width: 550px;
+                text-align: center;
+
+                font-weight: 300;
+
+                /* Estilos adicionales para 'p' si son necesarios */
+            }
+        }
+
+
+
+
+    }
+
+
+
+
+}

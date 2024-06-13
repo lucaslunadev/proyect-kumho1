@@ -1,0 +1,306 @@
+#modalNeumaticosautos {
+
+
+
+
+    .custom-modal-size {
+
+
+        .modal-body {
+            h5 {
+                margin-bottom: 20px;
+            }
+
+
+        }
+
+
+        max-width: 1200px !important; //agrandar modal
+
+        .modal-content {
+            max-width: 1200px !important; //agrandar modal
+
+            .modal-body {
+                overflow: auto;
+                height: auto !important;
+
+            }
+
+
+        }
+    }
+
+
+
+    .container-cards-automovil {
+
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0px !important;
+
+        div {
+            width: 350px;
+
+            height: 250px;
+            background-color: $km-black;
+            /*             transition: all .5s ease-in-out;
+            */
+        }
+
+
+        div:hover {
+            /*             background-color:rgb(55, 0, 0) ;
+                         */
+        }
+
+        img {
+            /*             transition: all .5s ease-in-out;
+                    */
+        }
+
+        img:hover {}
+
+    }
+
+}
+
+/* Estilos base para los contenedores de las tarjetas de neumáticos */
+.container-cards-automovil div {
+    position: relative;
+    overflow: hidden;
+    /* Oculta cualquier contenido que se desborde de los límites del div */
+    cursor: pointer;
+    /* Cambia el cursor para indicar que es interactivo */
+    /* Asegúrate de que los divs tengan dimensiones definidas o se ajusten al contenido */
+}
+
+/* Estilo para crear el efecto de brillo en tus tarjetas de neumáticos */
+.container-cards-automovil div::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    transform: skewX(-25deg);
+    transition: left .75s;
+    /* Asegúrate de que la transición sea suave */
+
+}
+
+/* Animación que se aplica al pasar el ratón por encima */
+.container-cards-automovil div:hover::before {
+    left: 125%;
+
+
+}
+
+
+.container-cards-automovil img {
+    display: block;
+    /* Remueve cualquier espacio extra alrededor de la imagen */
+    width: 100%;
+    /* Ajusta la imagen para que llene el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de aspecto de la imagen */
+}
+
+.container-cards-automovil div:hover img {
+    transform: scale(1.1);
+    /* Aumenta el tamaño de la imagen al 105% */
+    transition: transform .5s ease-in-out;
+    /* Suaviza la transición para que sea más natural */
+}
+
+
+
+
+
+
+
+
+
+
+#modalNeumaticoscamioneta {
+
+
+
+
+    .custom-modal-size {
+
+
+        .modal-body {
+            h5 {
+                margin-bottom: 20px;
+            }
+
+
+        }
+
+
+        max-width: 1200px !important; //agrandar modal
+
+        .modal-content {
+            max-width: 1200px !important; //agrandar modal
+
+            .modal-body {
+                overflow: auto;
+                height: auto !important;
+
+            }
+
+
+        }
+    }
+
+
+
+    .container-cards-camioneta {
+
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0px !important;
+
+        div {
+            width: 350px;
+
+            height: 250px;
+            background-color: $km-black;
+            /*             transition: all .5s ease-in-out;
+            */
+        }
+
+
+        div:hover {
+            /*             background-color:rgb(55, 0, 0) ;
+                         */
+        }
+
+        img {
+            /*             transition: all .5s ease-in-out;
+                    */
+        }
+
+        img:hover {}
+
+    }
+
+}
+
+/* Estilos base para los contenedores de las tarjetas de neumáticos */
+.container-cards-camioneta div {
+    position: relative;
+    overflow: hidden;
+    /* Oculta cualquier contenido que se desborde de los límites del div */
+    cursor: pointer;
+    /* Cambia el cursor para indicar que es interactivo */
+    /* Asegúrate de que los divs tengan dimensiones definidas o se ajusten al contenido */
+}
+
+/* Estilo para crear el efecto de brillo en tus tarjetas de neumáticos */
+.container-cards-camioneta div::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    transform: skewX(-25deg);
+    transition: left .75s;
+    /* Asegúrate de que la transición sea suave */
+
+}
+
+/* Animación que se aplica al pasar el ratón por encima */
+.container-cards-camioneta div:hover::before {
+    left: 125%;
+
+
+}
+
+
+.container-cards-camioneta img {
+    display: block;
+    /* Remueve cualquier espacio extra alrededor de la imagen */
+    width: 100%;
+    /* Ajusta la imagen para que llene el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de aspecto de la imagen */
+}
+
+.container-cards-camioneta div:hover img {
+    transform: scale(1.1);
+    /* Aumenta el tamaño de la imagen al 105% */
+    transition: transform .5s ease-in-out;
+    /* Suaviza la transición para que sea más natural */
+}
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+
+    //responsive de cards diseños de autos
+#modalNeumaticosautos{
+    h5{
+        font-size: 20px;
+        margin-bottom: 0px!important;
+        padding: 0px!important;
+    }
+}
+
+    .container-cards-automovil {
+        flex-wrap: nowrap !important;
+    align-items: center;
+        gap: 5px !important;
+
+        .ecsta,
+        .solus,
+        .ecowing {
+            width: 100%!important;
+            height: 100%!important;
+        }
+    }
+
+//responsive cards diseños de camionetas
+
+    #modalNeumaticoscamioneta{
+        h5{
+            font-size: 20px;
+            margin-bottom: 0px!important;
+            padding: 0px!important;
+        }
+    }
+
+        .container-cards-camioneta {
+            flex-wrap: nowrap !important;
+        align-items: center!important;
+            gap: 5px !important;
+
+            .roadventure,
+            .crugen {
+                width: 100%!important;
+                height: 100%!important;
+            }
+        }
+
+
+
+
+
+
+}

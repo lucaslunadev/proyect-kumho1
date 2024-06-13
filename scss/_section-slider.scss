@@ -1,0 +1,344 @@
+/* nota: podría asignarle a las imagenes el mismo alto para que el titulo se posicione siempre en el mismo lugar */
+
+
+/*
+.carousel-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+} */
+
+
+
+.bg-auto {
+    background-image: url(../assets/images/carousel-principal-home/auto_BG.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+
+}
+
+.bg-camioneta {
+    background-image: url(../assets/images/carousel-principal-home/SUV_BG.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+
+}
+
+.bg-utilitario {
+    background-image: url(../assets/images/carousel-principal-home/utilitario_BG_F.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+
+}
+
+.bg-camion {
+    background-image: url(../assets/images/carousel-principal-home/Truck_BG\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    ;
+
+
+
+}
+
+.img-auto {
+    width: 700px;
+
+
+}
+
+.img-camion {
+    width: 700px;
+
+
+}
+
+.img-utilitario {
+    width: 700px;
+
+}
+
+.img-camion {
+    width: 700px;
+
+}
+
+
+
+
+
+
+
+
+
+.carousel-caption {}
+
+.title-slider {}
+
+.section-carousel-slider {
+
+
+    .carousel-slide-hijo {
+
+        .btn {
+            border-radius: 5px;
+        }
+
+        .carousel-inner {
+            border-radius: 1.25rem !important;
+
+            .carousel-item {
+
+                position: relative;
+
+                .carousel-caption {
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    position: absolute;
+                    gap: 50px;
+
+
+
+
+
+                    .position-h3 {}
+
+
+                }
+
+
+                .animation-button {
+                    animation-delay: 1s;
+                }
+
+                .animation-title-h3 {
+                    text-shadow: 0px 5px 5px rgba(0, 0, 0, 5);
+                    animation-delay: 1s;
+                }
+
+                .animation-camion {
+                    animation-delay: .5s;
+                }
+
+                .title-camion {
+                    /* posicionar sin margin a futuro */
+
+                }
+
+                .img-camion {
+                    /*                     width: 75%; en html
+ */
+                }
+
+            }
+
+
+        }
+
+    }
+}
+
+
+.carousel-caption {
+
+
+    h3{
+        font-size: 3em;
+       font-weight: 900;
+                   margin-bottom: 25px;
+
+    }}
+
+@media only screen and (min-width:576px) and (max-width: 1460px) and (orientation: landscape) {
+    /* Estilos para dispositivos móviles en orientación horizontal */
+
+
+    .carousel-caption {
+        gap: 0px!important;
+
+
+        h3{
+            margin-bottom: 75px;
+
+        }
+    }
+.img-auto {
+    width: 300px;
+
+
+}
+
+.img-camioneta {
+    width: 300px;
+
+
+}
+
+.img-utilitario {
+    width: 300px;
+
+}
+
+.img-camion {
+    width: 300px;
+
+}
+
+
+    .bg-auto {
+        background-image: url(../assets/images/carousel-principal-home/auto_BG.jpg);
+        background-size: cover;
+        background-position: center;
+height: 400px;
+    }
+
+    .bg-camioneta {
+        background-image: url(../assets/images/carousel-principal-home/SUV_BG.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+
+    }
+
+    .bg-utilitario {
+        background-image: url(../assets/images/carousel-principal-home/utilitario_BG_F.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+
+    }
+
+    .bg-camion {
+        background-image: url(../assets/images/carousel-principal-home/Truck_BG\ \(2\).jpg);
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        ;
+
+
+
+    }
+
+
+
+
+  }
+
+
+
+
+@media (min-width: 992px) {
+    .carousel-slide-hijo {
+        width: 80%;
+        /*  puede ser vw */
+        margin: 0 auto;
+
+        .carousel-item {
+
+            /*  puede ser vh */
+            .fondo-slider-camion {}
+        }
+    }
+
+
+}
+
+@media (max-width: 576px) {
+
+
+
+
+    /* .title-slider{
+        font-size: 30px;
+        padding: 10px;
+    } */
+    #carouselExampleCaptions {
+
+        height: 260px !important;
+    }
+
+    .section-carousel-slider {
+        width: 100%;
+
+        height: 100% !important;
+
+        .carousel-slide-hijo {
+            .carousel-indicators {
+                display: none;
+            }
+
+            .carousel-inner {
+                height: 100%;
+
+                .carousel-item {
+                    height: 100% !important;
+
+
+                    .carousel-caption {
+                        height: 100% !important;
+                        gap: 0px;
+                        bottom: 0;
+
+                        h3{
+                            font-size: 1.4em!important;
+                           font-weight: 900;
+                           margin-bottom: 0px!important;
+                           margin-top: 10px;
+
+                        }
+
+                        .img-auto {
+                            width: 180px;
+                            margin-top: 60px;
+
+                        }
+
+                        .img-camion {
+                            width: 210px;
+                            margin-top: 60px;
+
+                        }
+
+                        .img-camioneta {
+                            width: 200px;
+
+                            margin-top: 60px;
+
+                        }
+
+                        .img-utilitario {
+                            width: 200px;
+                            margin-top: 60px;
+
+                        }
+
+
+
+                        .title-camion {
+                            /*                             margin-bottom: 10px;
+ */
+                            /* posicionar sin margin a futuro */
+                        }
+
+
+                        .btn-danger {
+                            width: 35%;
+                            padding: 1px;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

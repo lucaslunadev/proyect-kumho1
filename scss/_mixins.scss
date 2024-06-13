@@ -1,0 +1,36 @@
+// mixins.scss
+
+@mixin custom-button-styles($bg-color: transparent, $text-color: #fff, $border-color: #fff, $hover-bg-color: #fff, $hover-text-color: #000) {
+    background-color: $bg-color;
+    color: $text-color;
+    border: 1px solid $border-color;
+    border-radius: 100px !important;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: $hover-bg-color;
+        color: $hover-text-color;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px lighten($hover-bg-color, 20%);
+    }
+
+    @media (max-width: 768px) {
+        padding: 8px 16px;
+
+    }
+
+    @media (max-width: 576px) {
+        padding: 6px 12px;
+    }
+}
+
+
+
+

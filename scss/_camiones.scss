@@ -1,0 +1,1200 @@
+.camiones {
+    padding-top: 0px;
+    background-color: black;
+
+
+    color: #fff;
+
+    .banner-header {
+        width: 100%;
+        height: 500px;
+
+        background-image: url(../assets/images/sitio-camion/fondo-slider-camion\ \(1\).jpg);
+        background-size: cover;
+        background-position: 0 60% !important;
+        position: relative;
+
+    }
+
+
+
+    .banner-header::after {
+
+
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(178deg,
+                transparent 35%,
+                /* Ajusta para controlar dónde comienza el desvanecimiento */
+                black 90%
+                /* Cambia a 100% para que el blanco cubra la parte inferior */
+            );
+        z-index: 1;
+
+    }
+
+
+
+
+
+
+
+
+    .text-banner {
+
+        text-align: center;
+        margin: 100px auto 50px auto;
+
+        h2 {
+            font-weight: 900;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-weight: 200 !important;
+            /*    width: 60%;
+            margin: 0 auto; */
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .terreno {
+        margin-top: 50px !important;
+        color: white;
+        margin: 0 auto;
+        padding-bottom: 25px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        text-align: center;
+
+    }
+
+
+
+    .terreno * {
+        border-radius: 10px;
+    }
+
+
+    .selected {}
+
+
+
+
+    .terreno {
+        >div {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            height: 150px;
+            filter: brightness(0.3); // Oscurece un poco la imagen
+            transition: filter 0.3s, transform 0.3s; // Transición suave
+            text-align: center; // Centrar el texto
+            color: white; // Color del texto
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                font-weight: 900!important;
+
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); // Sombra para las letras
+            }
+
+            button {
+                display: none;
+                position: absolute;
+
+                bottom: 10px;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                cursor: pointer;
+                z-index: 9999 !important;
+            }
+
+            &.selected {
+                filter: none; // Elimina el filtro para la sección activa
+                transform: scale(1.05); // Escala la imagen un poco
+
+                span {
+
+                    transform: scale(1.2); // Escala la imagen un poco
+                    transition: .5s;
+                }
+
+
+
+
+                button {
+                    display: none; // Ocultar botón en la sección activa
+                }
+            }
+
+            &:not(.selected) {
+                button {
+                    display: block; // Mostrar botón en las secciones no seleccionadas
+                }
+            }
+        }
+
+        .ciudad {
+
+            background-image: url(../assets/images/sitio-camion/ciudad.png);
+        }
+
+        .regional {
+            background-image: url(../assets/images/sitio-camion/bg-regional.jpg);
+            background-size: 160%;
+        }
+
+        .mixto {
+
+            background-image: url(../assets/images/sitio-camion/bg-mixto.jpg);
+        }
+
+        .off-road {
+
+            background-image: url(../assets/images/sitio-camion/off-road.png);
+        }
+    }
+
+    .fade-in {
+        animation: fadeIn 0.5s;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+
+
+
+
+
+
+
+
+    @media (max-width: 600px) {
+        .terreno {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-items: center;
+
+
+
+        }
+
+
+
+        .terreno .ciudad,
+        .terreno .regional,
+        .terreno .mixto,
+        .terreno .off-road {
+            cursor: pointer;
+            font-weight: 500;
+            width: 150px !important;
+
+        }
+
+
+
+
+        .terreno img {
+            width: 100%;
+        }
+    }
+
+
+    .terreno img {
+        width: 100%;
+    }
+
+
+    .terreno .ciudad,
+    .terreno .regional,
+    .terreno .mixto,
+    .terreno .off-road {
+        width: 150px;
+        cursor: pointer;
+        font-weight: 500;
+    }
+
+    .terreno .ciudad:hover,
+    .terreno .regional:hover,
+    .terreno .mixto:hover,
+    .terreno .off-road:hover {
+
+        transition: .2s ease-out;
+
+    }
+
+
+    #content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 50px;
+    }
+
+
+
+
+
+    .content {
+
+
+        h6,
+        p {
+            position: relative;
+            /* Asegura que el texto esté encima del pseudo-elemento */
+            z-index: 1;
+            /* Coloca el texto encima del fondo */
+            color: white;
+            /* Color del texto */
+        }
+
+        &::before {
+            content: '';
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .5);
+            /* Color de fondo con transparencia */
+            z-index: 0;
+            /* Coloca el fondo debajo del contenido */
+        }
+    }
+
+
+
+
+
+    .content {
+
+
+
+        position: relative;
+        background-size: cover;
+        background-position: 0 70%;
+
+        /* Ajusta según tus necesidades */
+        h6 {
+            padding-bottom: 10px;
+            font-weight: 900;
+        }
+
+
+        color: #fff;
+        background-size: cover;
+
+
+        display: none;
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        /*         border: 1px solid #ccc */
+        border-radius: 10px;
+        /*         background-color:bisque;*/
+/*         box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+ */        text-align: center;
+        margin-bottom: 20px;
+
+
+        .inf-road {
+            padding-bottom: 40px;
+            width: 60%;
+            margin: 0 auto;
+            font-weight: 200;
+        }
+
+    }
+
+
+
+    #content-ciudad {
+        background-image: url(../assets/images/sitio-camion/bg-ciudad.jpg);
+
+    }
+
+
+    #content-regional {
+        background-image: url(../assets/images/sitio-camion/rutaa-arg.webp);
+
+
+    }
+
+
+    #content-mixto {
+        background-image: url(../assets/images/sitio-camion/bg-mixto.jpg);
+
+
+    }
+
+
+    #content-off-road {
+        background-image: url(../assets/images/sitio-camion/road-5977934_1280.jpg);
+        background-position: 90% 90%;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    .icon-position {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        img {
+            width: 120px !important;
+        }
+    }
+
+
+
+    .fade-in {
+        animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+
+
+
+
+
+
+    .content-ciudad {}
+
+
+
+
+
+    @media screen and (max-width: 599px) {
+        .carousel-ciudad {
+            width: 65%
+        }
+
+        .carousel-solus {
+            width: 65%
+        }
+
+        .carousel-ecsta {
+            width: 65%
+        }
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 899px) {
+        .carousel-ciudad {
+            width: 80%
+        }
+
+        .carousel-solus {
+            width: 80%
+        }
+
+        .carousel-ecsta {
+            width: 80%;
+        }
+    }
+
+    @media screen and (min-width: 900px) and (max-width: 1199px) {
+        .carousel-ciudad {
+            width: 80%
+        }
+
+        .carousel-solus {
+            width: 80%
+        }
+
+        .carousel-ecsta {
+            width: 80%
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Media queries para ajustar la máscara en pantallas más pequeñas */
+    @media (min-width: 1200px) {}
+
+
+
+
+    @media (max-width: 1200px) {
+        .skewed::after {
+
+            background: linear-gradient(177deg,
+                    transparent 75%,
+                    /* Ajusta para controlar dónde comienza el desvanecimiento */
+                    black 90%
+                    /* Cambia a 100% para que el blanco cubra la parte inferior */
+                );
+        }
+    }
+
+
+
+
+    @media (max-width: 768px) {
+
+        .skewed::after {
+            background: linear-gradient(177deg,
+                    transparent 75%,
+                    /* Ajusta para controlar dónde comienza el desvanecimiento */
+                    black 90%
+                    /* Cambia a 100% para que el blanco cubra la parte inferior */
+                );
+        }
+    }
+
+
+
+    @media (max-width: 480px) {
+
+
+
+
+        .skewed::after {
+            height: 500px;
+
+            background: linear-gradient(177deg,
+                    transparent 75%,
+                    /* Ajusta para controlar dónde comienza el desvanecimiento */
+                    black 90%
+                    /* Cambia a 100% para que el blanco cubra la parte inferior */
+                );
+        }
+    }
+
+
+
+
+
+
+    /*
+
+    .carousel-ciudad {
+        width: 200px;
+    }
+
+    .carousel-regional {
+        width: 25%;
+    }
+
+
+    .carousel-mixto{
+        width: 20%;
+    }
+
+    .carousel-off-road{
+        width: 10%;
+
+    } */
+
+
+    /*
+.swiper-regional{
+    width: 450px;
+    height: 300px;
+
+    } */
+
+
+
+
+    .swiper-wrapper {}
+
+
+    .swiper-slide {}
+
+    .card-fondo {}
+
+
+
+    .swiper-regional {
+        width: 450px !important
+    ;
+    height: 260px;
+    }
+
+    .swiper-mixto {
+        height: 260px;
+
+        width: 650px;
+    }
+
+
+
+
+    .swiper-ciudad {
+        height: 260px;
+
+        width: 650px;
+    }
+
+
+    .swiper-off-road {
+        width: 200px;
+        height: 260px;
+
+    }
+
+    @media screen and (max-width: 600px) {
+        .swiper-regional {
+            width: 70% !important
+        }
+
+        .swiper-mixto {
+
+            width: 70% !important
+        }
+
+
+
+
+        .swiper-ciudad {
+
+            width: 70% !important
+        }
+
+
+        .swiper-off-road {
+            width: 70% !important
+        }
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .swiper-slide img {
+        width: 140px;
+        padding: 5px;
+    }
+
+
+
+    .swiper-slide {
+
+        box-sizing: border-box;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+
+
+
+    .modelo-dis {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        color: black !important;
+
+    }
+
+
+
+    .modelo-dis .logo {
+        width: 50%;
+    }
+
+
+
+
+
+
+    .modelo-dis p {
+        font-weight: 1000;
+        font-style: italic;
+        margin: 5px;
+        color: black;
+
+    }
+
+
+
+
+    .img-neumatico {
+
+        transition: transform 0.3s ease, filter 0.3s ease;
+        cursor: pointer;
+
+    }
+
+
+
+
+
+
+
+    .img-neumatico:hover {
+        transform: translateY(-2%);
+    }
+
+
+
+    .card-fondo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+    }
+
+
+    /* sombra debajo del neumatico*/
+    .card-fondo::after {
+        content: '';
+        position: absolute;
+        bottom: 19%;
+        left: 50%;
+        /* Centrar la sombra horizontalmente */
+        transform: translateX(-50%) scaleY(-1);
+        width: 50%;
+        /* Ancho de la sombra */
+        height: 4%;
+        /* Altura de la sombra */
+        background: rgba(0, 0, 0, 1);
+        filter: blur(0.25rem);
+        /* Color de la sombra */
+        border-radius: 50%;
+        opacity: 0;
+        /* Inicialmente oculto */
+        transition: opacity 0.3s ease;
+        /* Transición suave para la opacidad */
+        z-index: 9999;
+
+    }
+
+
+
+
+
+
+    .card-fondo.hover::after {
+        opacity: 1;
+        /* Hacer visible la sombra */
+        /* z-index: 99999; Si es necesario, ajusta según el contexto */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .swiper-pagination-bullet {
+        opacity: 1;
+        position: relative;
+        width: 30px;
+        /* Anchura del indicador */
+        height: 2px;
+        /* Altura del indicador */
+        margin: 5px 5px;
+        /* Espacio entre indicadores */
+        /*     text-indent: -999px;*/
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.5);
+        /* Color de fondo de los indicadores */
+        border-radius: 0px;
+        /* Bordes ligeramente redondeados */
+        transition: background-color .3s;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #fff
+    }
+
+    .swiper-pagination {
+        top: 15px;
+        position: relative;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 10px 4px
+    }
+
+
+
+
+
+
+
+
+
+
+
+    //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+    //media query slider de neumaticos
+
+
+
+
+    //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+    //media querys controles indicadores de sliders
+
+
+
+
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        color: rgb(146, 150, 146);
+        --swiper-navigation-size: 20px;
+
+        transform: translateY(-50%) !important;
+
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {}
+
+
+
+    .swiper-button-prev:hover {
+
+        color: rgb(232, 232, 232)
+    }
+
+
+    .swiper-button-next:hover {
+        color: rgb(232, 232, 232)
+    }
+
+
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        /*  left:  17%;
+        right: auto; */
+        /*         margin: 0 15%;
+ */
+    }
+
+
+
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        /*    right: 17%;
+    left: auto */
+    }
+
+
+
+    .swiper {
+        position: static !important;
+    }
+
+
+    @media screen and (max-width: 1400px) {
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: none;
+
+        }
+
+
+    }
+
+
+
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: 19%;
+        left: auto
+    }
+
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: 19%;
+        right: auto
+    }
+
+
+
+    @media screen and (min-width: 500px) and (max-width:1000px) {}
+
+
+
+
+
+    //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+    @media only screen and (max-width: 768px) and (orientation: landscape) {
+
+
+        .skewed {
+
+            background-position: center 20px !important;
+            /* Alinea los elementos al inicio */
+
+            /* No es necesario pero establece el contexto del stack para z-index */
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+
+        #content-container {
+            padding: 10px !important;
+
+
+
+        }
+
+        .skewed {
+            height: 500px;
+            background-repeat: no-repeat;
+            background-position: center 10px !important;
+            background-size: 200%
+                /* Alinea los elementos al inicio */
+
+                /* No es necesario pero establece el contexto del stack para z-index */
+        }
+
+
+        .skewed::after {
+            height: 500px;
+
+            background: linear-gradient(177deg,
+                    transparent 75%,
+                    /* Ajusta para controlar dónde comienza el desvanecimiento */
+                    black 90%
+                    /* Cambia a 100% para que el blanco cubra la parte inferior */
+                );
+        }
+
+
+
+
+
+        .carousel-ecsta {
+            width: 70%;
+        }
+
+        .carousel-solus {
+            width: 70%;
+
+        }
+
+        .carousel-ecowing {
+            width: 70%;
+        }
+
+    }
+
+
+
+    @media screen and (min-width: 500px) and (max-width:1000px) {
+
+
+        .skewed {
+            height: 500px;
+            background-repeat: no-repeat;
+            background-position: center 15%;
+
+
+
+            /* Alinea los elementos al inicio */
+
+            /* No es necesario pero establece el contexto del stack para z-index */
+        }
+
+
+        .skewed::after {
+            height: 500px;
+
+            background: linear-gradient(177deg,
+                    transparent 75%,
+                    /* Ajusta para controlar dónde comienza el desvanecimiento */
+                    black 90%
+                    /* Cambia a 100% para que el blanco cubra la parte inferior */
+                );
+        }
+
+
+
+    }
+
+
+
+
+    @media screen and (min-width: 1000px) and (max-width: 1370px) {
+
+
+        .skewed {
+            height: 600px;
+            background-repeat: no-repeat;
+            background-position: center 20%;
+
+            /* Alinea los elementos al inicio */
+
+            /* No es necesario pero establece el contexto del stack para z-index */
+        }
+
+
+        .skewed::after {
+            height: 600px;
+
+            background: linear-gradient(177deg,
+                    transparent 75%,
+                    /* Ajusta para controlar dónde comienza el desvanecimiento */
+                    black 90%
+                    /* Cambia a 100% para que el blanco cubra la parte inferior */
+                );
+        }
+
+
+
+
+
+
+
+
+        .carousel-ecsta {
+            width: 60%;
+        }
+
+        .carousel-solus {
+            width: 37%;
+
+        }
+
+        .carousel-ecowing {
+            width: 37%;
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (min-width: 1371px) {
+
+        .skewed {
+            height: 650px;
+            background-repeat: no-repeat;
+            background-position: center 35%;
+
+            /* Alinea los elementos al inicio */
+
+            /* No es necesario pero establece el contexto del stack para z-index */
+        }
+
+
+        .skewed::after {
+            height: 650px;
+
+            background: linear-gradient(178deg,
+                    transparent 75%,
+                    /* Ajusta para controlar dónde comienza el desvanecimiento */
+                    black 90%
+                    /* Cambia a 100% para que el blanco cubra la parte inferior */
+                );
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 800px) {
+
+
+
+        .inf-road {
+            width: 100% !important;
+
+        }
+
+        .banner-header {
+
+
+            background-position: 60% 20% !important;
+
+        }
+
+
+        .text-banner {
+            margin-top: 0px;
+            margin-bottom: 0px;
+
+        }
+
+        .terreno {
+            margin-top: 50px !important;
+        }
+    }
+
+
+}

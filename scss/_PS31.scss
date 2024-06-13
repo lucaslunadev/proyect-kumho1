@@ -1,0 +1,1444 @@
+.PS31 {
+
+
+
+
+
+
+
+
+    color: #fff;
+    background-color: #fff;
+
+
+    .bi::before,
+    [class^="bi-"]::before,
+    [class*=" bi-"]::before {}
+
+    .container-buttons {
+        a {
+
+            color: inherit;
+            text-decoration: none;
+
+        }
+
+        .bi {
+            margin-right: 3px !important;
+        }
+
+
+    }
+
+
+
+    .description {
+
+        h2 {
+            font-weight: 900;
+            font-size: 2rem;
+
+
+            img {
+                width: 1.5rem !important;
+                margin-right: 5px;
+            }
+        }
+
+    }
+
+    .separator {
+        text-align: center;
+        margin: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-top: -1px;
+            max-height: 200px;
+            width: 100%;
+        }
+
+        ;
+    }
+
+    .section-header {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        gap: 300px;
+        align-items: center;
+        padding: 50px;
+
+        .container-descript-gral {
+            align-items: center;
+            width: 40%;
+            padding: 50px;
+
+            p {
+
+                font-size: 1.6rem;
+                font-weight: 200;
+                padding: 30px 0;
+            }
+
+            .diseño-modelo {
+
+                display: flex;
+                align-items: center;
+
+
+                h2 {
+                    font-size: 4rem;
+                    font-weight: 900;
+                    font-style: italic;
+
+                }
+
+
+
+
+                    .img-title {
+                        width: 10rem !important;
+                    }
+
+                    h2 {
+                        font-size: 2.2rem !important;
+                    }
+
+
+
+
+                h1 {
+                    font-weight: 1000;
+                    font-style: italic;
+                    font-size: clamp(30px, 5vw, 40px);
+                    /* Establece el tamaño de fuente entre 20px y 40px, pero utilizando un tamaño mínimo de 5vw */
+                }
+
+
+            }
+
+
+
+
+
+
+
+
+        }
+
+    }
+
+    .container-img {
+        text-align: center;
+
+        padding: 20px;
+
+        img {
+            width: 260px;
+
+
+        }
+    }
+
+
+    .container-buttons {
+        .btn {
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+    }
+
+
+
+
+
+
+
+    .container-otros_diseños {
+
+        background-color: black;
+        padding: 20px;
+
+        h2 {
+            text-align: center;
+            padding-bottom: 10px;
+            font-weight: 1000;
+        }
+
+    }
+
+
+
+
+    .container-rows {
+        background-color: white;
+        color: black;
+
+
+
+
+
+        .fila-gral {
+            padding: 100px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 50px;
+
+            .description {
+                width: 50%;
+                padding: 20px;
+
+                ul {
+                    text-align: center;
+
+                    li {
+                        padding-bottom: 10px;
+
+                    }
+
+
+                   /*  picture{
+                        width: 210px;
+
+                        img{
+                            border-radius: 100%;
+                            width: 210px;
+                        }
+                    } */
+
+                    list-style: none;
+                }
+
+                h2 {
+                    font-weight: 900;
+                    font-size: 3rem;
+
+                    img {
+                        width: 2.2rem;
+                    }
+                }
+            }
+
+            .img-description {
+
+                width: 50%;
+                .img-fila-1{
+                    width: 90%!important;
+                }
+
+
+
+                img {
+                    width: 100%;
+                    border-radius: 15px;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+                }
+            }
+
+        }
+
+
+
+        .fila-3{
+
+            padding: 10px!important;
+            .description{
+                ul{
+                    li{
+
+                        font-size: 1.4rem;
+                        font-weight: 900;
+
+
+
+                        img{
+                            width: 1.7rem;
+                        }
+                    }
+
+                    p{
+                        font-weight: 100;
+                    }
+                    img{
+
+                    }
+
+                    .hombros-anchos{
+                        margin-bottom: 20px;
+                    }
+                    .ranura-ancha{
+                        margin-bottom: 20px;
+
+
+                    }
+
+                    .hombros-rigidos{
+                        margin-bottom: 20px;
+
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+
+
+
+
+
+    .fila-gral {
+        justify-content: space-around;
+
+
+        .img-description {
+
+            text-align: center;
+
+            img {
+                width: 70% !important;
+            }
+        }
+    }
+
+    .description {
+
+        h2 {
+            text-align: center !important;
+
+
+            font-weight: 900;
+            font-size: 2rem;
+
+        }
+
+        justify-content: center !important;
+
+        ul {
+            margin: 0 auto;
+        }
+    }
+
+
+    .fila-4{
+
+        .description{
+            h2{
+                font-size: 1.7rem!important;
+
+                img{
+                    width: 1.4rem!important;
+                }
+            }
+
+
+            ul{
+                li{
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                }
+                p{
+                    font-weight: 300;
+
+                    font-size: 1rem;
+
+                }
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 1100px) {
+
+        .section-header {
+            gap: 0px
+        }
+
+        ;
+
+        .container-img {
+            text-align: center;
+
+
+            img {
+                width: 200px !important;
+
+
+            }
+        }
+
+        .fila-4 {
+
+
+
+            .description {
+                margin-bottom: 50px;
+
+            }
+
+
+        }
+
+        .fila-gral {
+            padding-bottom: 0px !important;
+        }
+
+
+        .description {
+            ul {
+                width: 100% !important;
+                padding: 0px !important;
+            }
+        }
+
+
+        .fila-gral {}
+
+        .section-header {
+            flex-direction: column-reverse;
+            align-items: center;
+
+            .container-img {
+
+
+                img {
+                    width: 100%;
+                    padding: 10px;
+
+
+                }
+            }
+
+
+
+            .container-descript-gral {
+                width: 100%;
+
+                p {}
+
+                .container-buttons {
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: nowrap;
+
+                    .btn {
+                        margin-right: 3px;
+                    }
+
+
+                }
+
+                .diseño-modelo {
+                    h1 {
+                        margin: 0px;
+                    }
+
+                    margin-top: 20px;
+
+                }
+
+
+
+
+
+
+
+            }
+        }
+
+        .fila-gral {
+            flex-direction: column;
+            justify-content: center;
+            gap: 0px !important;
+
+            .description {
+                width: 80% !important;
+
+            }
+
+            .img-description {
+                text-align: center;
+                width: 80% !important;
+
+            }
+
+        }
+
+
+    }
+
+
+
+
+    .fila-gral-1 {
+        background-color: black;
+        color: white;
+    }
+
+
+
+
+
+    .carousel-autos-gral {
+        width: 65%;
+
+
+    }
+
+
+
+
+    .swiper-slide img {
+        width: 140px;
+        padding: 5px;
+    }
+
+
+
+    .swiper-slide {
+
+        box-sizing: border-box;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+
+    .modelo-dis {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+    .modelo-dis .logo {
+        width: 50%;
+    }
+
+
+
+
+    .modelo-dis p {
+        font-weight: 1000;
+        font-style: italic;
+        margin: 5px;
+        color: black;
+
+    }
+
+
+
+
+
+    .img-neumatico {
+
+        transition: transform 0.3s ease, filter 0.3s ease;
+        cursor: pointer;
+
+
+    }
+
+
+
+
+
+
+
+    .img-neumatico:hover {
+        transform: translateY(-2%);
+    }
+
+
+
+    .card-fondo {
+        position: relative;
+
+        text-align: center;
+
+
+    }
+
+
+
+    /* sombra debajo del neumatico*/
+    .card-fondo::after {
+        content: '';
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        /* Centrar la sombra horizontalmente */
+        transform: translateX(-50%) scaleY(-1);
+        width: 50%;
+        /* Ancho de la sombra */
+        height: 4%;
+        /* Altura de la sombra */
+        background: rgba(0, 0, 0, 1);
+        filter: blur(0.25rem);
+        /* Color de la sombra */
+        border-radius: 50%;
+        opacity: 0;
+        /* Inicialmente oculto */
+        transition: opacity 0.3s ease;
+        /* Transición suave para la opacidad */
+        z-index: 9999;
+
+    }
+
+
+
+
+
+
+
+    .card-fondo.hover::after {
+        opacity: 1;
+        /* Hacer visible la sombra */
+        /* z-index: 99999; Si es necesario, ajusta según el contexto */
+    }
+
+
+
+
+    // estilos de indicadores
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        content: "";
+    }
+
+
+    .swiper-pagination-bullet {
+        opacity: 1;
+        position: relative;
+        width: 30px;
+        /* Anchura del indicador */
+        height: 2px;
+        /* Altura del indicador */
+        margin: 5px 5px;
+        /* Espacio entre indicadores */
+        /*     text-indent: -999px;*/
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.5);
+        /* Color de fondo de los indicadores */
+        border-radius: 1px;
+        /* Bordes ligeramente redondeados */
+        transition: background-color .3s;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #fff
+    }
+
+    .swiper-pagination {
+        top: 15px;
+        position: relative;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 10px 4px
+    }
+
+
+    /* For medium devices */
+    @media screen and (min-width: 768px) {
+
+
+        .swiper-button-next,
+        .swiper-button-prev {}
+    }
+
+    .carousel-autos-gral {
+        position: relative;
+        /* Asegúrate de que el contenedor tenga una posición definida */
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        /* Alinea los controles verticalmente en el centro del contenedor */
+        transform: translateY(-50%);
+        /* Ajusta la posición vertical */
+        z-index: 10;
+        /* Asegúrate de que los controles estén sobre las diapositivas */
+    }
+
+
+    .swiper-button-prev {
+        left: 10px;
+        /* Alinea el botón de anterior a la izquierda */
+    }
+
+
+
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        background-color: red;
+
+
+    }
+
+
+    @media screen and (min-width: 1100px) {
+        .description {
+            ul {
+                width: 100% !important;
+                padding: 0px !important;
+
+                li {
+                    width: 100%;
+                }
+            }
+        }
+
+
+        .fila-1 {
+
+            .img-description {
+                order: 1;
+
+
+            }
+
+
+            .description {
+                order: 2;
+            }
+
+
+        }
+
+        .fila-2 {
+
+            .img-description {
+                order: 2;
+
+
+            }
+
+
+            .description {
+                order: 1;
+            }
+
+
+        }
+
+
+        .container-fluid {
+
+            .fila-3 {
+                color: #fff;
+
+
+
+                .img-description {
+                    order: 1;
+
+
+                }
+
+
+                .description {
+                    order: 2;
+                }
+
+
+            }
+        }
+
+
+
+        .fila-4 {
+
+            .img-description {
+                order: 2;
+
+
+            }
+
+
+            .description {
+                order: 1;
+            }
+
+
+        }
+
+
+
+
+
+    }
+
+    .fila-3 {
+        color: #fff;
+
+    }
+
+
+
+
+
+
+    @media screen and (min-width: 500px) {
+
+
+
+        .diseño-modelo {
+            h2 {
+
+
+                .logo-mobile {
+                    display: none;
+                }
+
+            }
+        }
+    }
+
+
+
+    @media screen and (max-width: 500px) {
+        .container-descript-gral{
+            .diseño-modelo{
+                .img-title{
+                    width: 10rem!important;
+                }
+
+
+            }
+
+
+        }
+
+
+        .container-otros_diseños {
+            padding: 20px 0px;
+        }
+
+        .swiper-pagination-bullet {
+            opacity: 1;
+            position: relative;
+            /* Anchura del indicador */
+            height: 2px;
+            width: 20px !important;
+            border-radius: 0px;
+
+        }
+
+        .carousel-autos-gral {
+            width: 70%;
+        }
+
+        .diseño-modelo {
+            flex-direction: column;
+            gap: 10px;
+            /*             padding-top: 30px;
+ */
+            justify-content: center;
+
+
+            h2 {
+                font-size: 2.5rem !important;
+                margin-bottom: 20px;
+
+
+            }
+
+
+
+        }
+
+        .section-header {
+            height: auto;
+            margin-top: 70px;
+        }
+
+        .container-img {
+            img {
+                width: 40% !important;
+            }
+
+            padding: 0%
+        }
+
+        .section-header {
+
+            padding: 5px;
+        }
+
+        .container-descript-gral {
+
+            text-align: center;
+            /*             position: relative;*/
+            padding: 0px !important;
+
+
+            p {
+                font-size: .8rem !important;
+                margin: 0px 5px !important;
+                padding-top: 0px !important;
+
+
+            }
+        }
+
+        .container-buttons {
+
+            /*             position: absolute;*/
+            /* left: 50% !important; */
+            /*             gap: 10px;*/
+            /*             transform: translateX(-50%);*/
+            /* Ajustar su posición para ocupar toda la pantalla */
+            margin: 0px 0 20px 0;
+            gap: 10px;
+
+            .btn-sm {
+                font-size: .8rem;
+            }
+        }
+
+
+
+
+        .fila-1 {
+            padding: 20px !important;
+        }
+
+        .description {
+            padding: 0px !important;
+
+            h2 {
+                margin-bottom: 20px;
+                font-size: 2rem !important;
+            }
+
+            ul {
+
+                li {
+
+                    font-size: .8rem !important;
+
+                }
+            }
+        }
+
+
+        .fila-gral {
+            padding: 0 0 40px 0 !important
+        }
+
+        //orden en movile
+
+
+        .fila-1 {
+
+            .img-description {
+                order: 2;
+
+            }
+
+
+            .description {
+                order: 1;
+            }
+
+
+        }
+
+        .fila-2 {
+
+            .img-description {
+                order: 2;
+
+
+            }
+
+
+            .description {
+                order: 1;
+            }
+
+
+        }
+
+
+        .container-fluid {
+
+            .fila-3 {
+                color: #fff;
+
+                .img-description {
+                    order: 2;
+
+
+                }
+
+
+                .description {
+                    order: 1;
+
+                    h2 {
+                        padding-top: 20px;
+                    }
+                }
+
+
+            }
+        }
+
+        .fila-4 {
+
+            .img-description {
+                order: 2;
+
+
+            }
+
+
+            .description {
+                order: 1;
+
+                margin-bottom: 0px !important;
+
+                h2 {
+                    padding-top: 20px;
+                }
+
+            }
+
+
+        }
+
+        .fila-gral {
+            .img-description {
+
+                margin-top: 25px;
+            }
+
+        }
+
+
+        .container-rows {
+            padding: 0px !important;
+        }
+
+
+        .section-header {
+            margin-top: 0px;
+            padding-top: 90px;
+        }
+
+
+
+        .diseño-modelo {
+            h2 {
+
+
+                .logo-mobile {
+                    width: 2.2rem;
+                    margin-right: 5px;
+                }
+
+            }
+        }
+
+
+
+
+    }
+
+
+
+    @media screen and (max-width: 400px) {
+
+        .container-buttons {
+
+            /*             position: absolute;*/
+            /* left: 50% !important; */
+            /*             gap: 10px;*/
+            /*             transform: translateX(-50%);*/
+            /* Ajustar su posición para ocupar toda la pantalla */
+            margin: 0px 0 20px 0;
+            gap: 10px;
+
+            .btn-sm {
+                font-size: .6rem !important;
+            }
+        }
+
+    }
+
+
+
+    @media screen and (min-width: 1000px) and (max-width: 1370px) {
+
+        .section-header {
+            padding: 0px !important;
+            padding-top: 90px !important;
+
+            .container-img {
+                img {
+                    width: 150px !important;
+                }
+
+            }
+        }
+
+
+        .container-buttons {
+
+            .btn {
+                font-size: 1rem !important;
+                margin: 5px !important;
+            }
+
+        }
+
+        .description {
+            h2 {
+                font-size: 2rem !important;
+            }
+        }
+
+        .container-descript-gral {
+
+            width: 50% !important;
+            padding: 0px !important;
+
+            p {
+                font-size: 1.1rem !important;
+                padding: 15px !important;
+                padding-left: 0px !important;
+            }
+
+            .diseño-modelo {
+
+                .img-title {
+                    width: 1rem !important;
+                }
+
+                h2 {
+                    font-size: 2.2rem !important;
+                }
+            }
+        }
+
+
+        .separator {
+            img {}
+        }
+
+
+
+
+        .container-buttons {
+
+            .btn {
+                font-size: .7rem !important;
+                margin: 5px !important;
+            }
+
+        }
+
+        .section-header {
+            gap: 150px;
+        }
+
+
+
+
+            .container-rows {
+                .fila-1 {
+                    padding-top: 50px!important;
+                }
+            }
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @media only screen and (max-width: 900px) and (orientation: landscape) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .container-descript-gral {
+            padding: 0px !important;
+
+
+            .diseño-modelo {
+                justify-content: center;
+            }
+        }
+
+        .container-buttons {
+
+            .btn {
+                margin-right: 20px !important;
+            }
+        }
+
+
+        .fila-1 {
+            padding-top: 50px !important;
+        }
+
+
+        .description {
+            h2 {}
+        }
+
+        .container-rows {
+            padding: 0px !important;
+
+
+
+
+            .fila-3 {
+                color: #fff !important;
+            }
+
+        }
+
+
+
+
+
+
+
+        .diseño-modelo {
+
+            margin-top: 0px !important;
+
+
+
+            justify-content: center;
+
+        }
+
+
+
+
+        .fila-1 {
+            padding: 20px !important;
+        }
+
+        .description {
+            padding: 0px !important;
+
+            h2 {
+                margin-bottom: 20px;
+                font-size: 2rem !important;
+                font-weight: 900;
+
+            }
+
+            ul {
+
+                li {
+
+                    font-size: 1.2rem;
+
+                }
+            }
+        }
+
+
+
+
+
+        .fila-gral {
+            padding: 0 0 40px 0 !important
+        }
+
+
+
+
+
+
+
+
+
+        //orden en movile
+
+
+        .fila-1 {
+
+            .img-description {
+                order: 2;
+
+            }
+
+
+            .description {
+                order: 1;
+            }
+
+
+        }
+
+        .fila-2 {
+
+            .img-description {
+                order: 2;
+
+
+            }
+
+
+            .description {
+                order: 1;
+            }
+
+
+        }
+
+
+        .container-fluid {
+
+            .fila-3 {
+                color: #fff;
+
+                .img-description {
+                    order: 2;
+
+
+                }
+
+
+                .description {
+                    order: 1;
+
+                    h2 {
+                        padding-top: 20px;
+                    }
+                }
+
+
+            }
+        }
+
+
+
+        .fila-4 {
+
+            .img-description {
+                order: 2;
+
+
+            }
+
+
+            .description {
+                order: 1;
+
+                margin-bottom: 0px !important;
+
+                h2 {
+                    padding-top: 20px;
+                }
+
+            }
+
+
+        }
+
+
+
+        .fila-gral {
+            .img-description {
+
+                margin-top: 25px;
+            }
+
+        }
+
+
+
+
+
+        .container-rows {
+            padding: 0px !important;
+        }
+
+
+        .section-header {
+            margin-top: 0px;
+            padding-top: 90px;
+        }
+
+
+
+        .container-rows {
+
+
+
+            .fila-3 {
+                .description {
+
+                    color: #fff !important;
+
+                }
+            }
+        }
+
+
+
+
+        .diseño-modelo {
+            justify-content: center;
+
+
+            .img-title{
+                width: 15rem!important;
+            }
+            h2{
+                font-size: 3rem!important;
+            }
+        }
+
+    }
+}
