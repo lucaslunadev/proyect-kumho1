@@ -5,7 +5,7 @@
   align-items: flex-end;
   overflow: hidden;
   width: auto;
-height: calc(100vw * 9 / 16);
+  height: calc(100vw * 9 / 16);
   // Para una relación de aspecto de 16:9
   height: 80vh;
 
@@ -26,7 +26,8 @@ height: calc(100vw * 9 / 16);
 
 .section-buscador-desktop {
 
-  backdrop-filter: blur(10px) ;
+
+  backdrop-filter: blur(10px);
   background-color: $km-dark-gray-blur ;
   position: absolute;
   margin: 0 auto;
@@ -35,18 +36,28 @@ height: calc(100vw * 9 / 16);
 
   padding: 20px 20px;
   margin: 10px 10px;
-  border-radius:10px;
+  border-radius: 10px;
 
   .form-group {
     width: 150px;
+
     .form-select {
-      border-radius: 10px;
-      cursor: pointer;
+      /* border-radius: 10px;
+      cursor: pointer; */
     }
   }
-  button {
+
+  .buscar{
+    text-align: center;
+  }
+
+  .btn-custom {
     width: 100%;
     border-radius: 5px;
+  }
+
+  h4 {
+    padding-bottom: 10px;
   }
 
 }
@@ -59,7 +70,7 @@ height: calc(100vw * 9 / 16);
 
     width: 80%;
 
-    margin: 50px auto!important;
+    margin: 50px auto !important;
     margin-bottom: 0px;
 
 
@@ -79,13 +90,19 @@ height: calc(100vw * 9 / 16);
     width: 100%;
     margin-bottom: 10px;
 
-    .form-select{
-      border-radius: 10px   }
+    .form-select {
+      border-radius: 10px
+    }
 
   }
 
-  button {
+   .buscar{
     width: 100%;
+    text-align: center;
+  }
+
+  h2 {
+    padding: 10px;
   }
 
   --bs-bg-opacity: .7

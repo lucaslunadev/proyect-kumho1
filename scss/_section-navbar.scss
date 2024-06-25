@@ -32,7 +32,7 @@
 .navbar .dropdown-menu .dropdown-item:hover,
 .navbar .dropdown-menu .dropdown-item:focus,
 .navbar .dropdown-menu .dropdown-item:active {
-  background-color:rgba(0, 0, 0, 0.5); /* Elimina el color de fondo */
+  background-color:rgba(0, 0, 0, .9)!important; /* Elimina el color de fondo */
   color: white !important; /* Mantiene el color de texto original */
   border-left: $km-red 3px solid
    ; /* Elimina cualquier borde */
@@ -64,14 +64,14 @@
 
 
     .navbar {
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(15px);
         background-color: $km-dark-gray-blur ;
 
 
     }
 
     .dropdown-menu {
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(15px);
         background-color: $km-dark-gray-blur ;
         margin-top: 12px;
         border: none;
@@ -82,7 +82,7 @@
     ul.dropdown-menu.show {
 
         .dropdown-menu {
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(15px);
             background-color: $km-dark-gray-blur-0;
             border: none;
             margin-top: 15px;

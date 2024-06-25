@@ -20,8 +20,3 @@ document.querySelector(".logos").appendChild(copy);
 
 
 
-
-
-
-
-

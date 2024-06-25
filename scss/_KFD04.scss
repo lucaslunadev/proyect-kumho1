@@ -1,6 +1,48 @@
 .KFD04 {
 
 
+
+
+
+    .desing-modelo {
+        padding: 10px;
+
+        .picture-ciudad {
+
+            width: 300px;
+            height: 100px;
+            background-image: url(../assets/images/sitio-camion/road-5977934_1280.jpg);
+            background-size: cover;
+            background-position: 0 90%;
+            border-radius: 5px;
+
+        }
+
+
+    }
+
+
+
+
+
+
+    .container-tire-position-gral {
+        text-align: center;
+
+        h2 {
+            padding-bottom: 20px;
+
+            font-weight: 900;
+            font-size: 1.5rem;
+        }
+    }
+
+
+
+
+
+
+
     .legend {
         margin-bottom: 30px;
         display: flex;
@@ -35,8 +77,6 @@
 
 
 
-
-
     .tire-position {
         margin-bottom: 30px;
 
@@ -45,6 +85,7 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        gap: 25px;
 
         h2 {
             text-align: center;
@@ -60,7 +101,7 @@
 
             img {
 
-                width: 200px;
+                width: 150px;
             }
 
         }
@@ -98,7 +139,82 @@
 
 
 
+    .swiper {
+        width: 1100px;
+        height: 250px;
 
+        .swiper-wrapper {
+
+
+
+            .swiper-slide {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+
+
+
+            }
+
+
+
+
+
+        }
+
+
+    }
+
+
+
+
+    @media screen and (max-width: 500px) {
+
+
+        .swiper {
+            width: 250px;
+            height: 250px;
+
+            .swiper-wrapper {
+
+
+
+                .swiper-slide {
+                    /*                 width: 100% !important;
+     */
+
+
+
+
+                }
+
+
+
+
+
+            }
+
+
+        }
+
+
+    }
+
+
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+
+
+        bottom: -10px;
+        /*         margin-top: 20px;
+ */
+    }
 
 
 
@@ -225,7 +341,29 @@
 
     }
 
+    @media screen and (min-width: 1000px) {
+
+        #elementoAnimado1 {
+            display: none;
+
+
+        }
+
+    }
+
     @media screen and (max-width: 1000px) {
+
+
+        .desing-modelo {
+            flex-direction: column-reverse !important;
+        }
+
+        #elementoAnimado2 {
+            display: none;
+
+
+        }
+
 
 
 
@@ -618,23 +756,7 @@
         .container-descript-gral {
             z-index: 999;
             align-items: center;
-
-
-            /*             margin-bottom: 150px;
-  */
-            /*     width: 39%;
-
-             margin: 40px 0 100px 200px; */
-            /*   position: absolute;
-             left: 20%; */
             width: 50%;
-            /*             padding: 0 200px;
-  */
-
-
-
-
-
 
             p {
 
@@ -643,8 +765,6 @@
             }
 
             .desing-modelo {
-
-
 
                 display: flex;
                 align-items: center;
@@ -655,6 +775,7 @@
                     font-size: 4rem !important;
                     font-weight: 900;
                     font-style: italic;
+                    margin: 0px;
 
                 }
 
@@ -846,10 +967,11 @@
 
 
 
-
-
     .carousel-autos-gral {
-        width: 65%;
+        /*         width: 50%;
+ */
+
+
 
 
     }
@@ -920,7 +1042,7 @@
 
 
 
-    .card-fondo {
+    .swiper-slide {
         position: relative;
 
         text-align: center;
@@ -931,7 +1053,7 @@
 
 
     /* sombra debajo del neumatico*/
-    .card-fondo::after {
+    .swiper-slide::after {
         content: '';
         position: absolute;
         bottom: 15%;
@@ -960,7 +1082,7 @@
 
 
 
-    .card-fondo.hover::after {
+    .swiper-slide.hover::after {
         opacity: 1;
         /* Hacer visible la sombra */
         /* z-index: 99999; Si es necesario, ajusta según el contexto */
@@ -974,6 +1096,17 @@
     .swiper-button-next:after {
         content: "";
     }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -993,18 +1126,16 @@
         border-radius: 1px;
         /* Bordes ligeramente redondeados */
         transition: background-color .3s;
+
     }
 
     .swiper-pagination-bullet-active {
         background-color: #fff
     }
 
-    .swiper-pagination {
-        top: 15px;
-        position: relative;
-    }
+    .swiper-pagination {}
 
-    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
     .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
         margin: 10px 4px
     }
@@ -1238,9 +1369,7 @@
 
         }
 
-        .carousel-autos-gral {
-            width: 70%;
-        }
+
 
         .desing-modelo {
             flex-direction: column;
@@ -1459,6 +1588,57 @@
 
     //1370px
 
+
+
+    @media screen and (min-width: 500px) and (max-width: 1325px) {
+
+
+
+        .carousel-autos-gral {
+            /*             width: 40%!important;
+ */
+
+        }
+
+
+
+
+    }
+
+    @media screen and (min-width: 1326px) and (max-width: 1880px) {
+
+
+
+
+
+
+
+
+        .carousel-autos-gral {
+            /*             width: 15%!important;
+ */
+
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
     @media screen and (min-width: 1000px) and (max-width: 1522px) {
 
 
@@ -1476,12 +1656,7 @@
 
         }
 
-        .description {
-            h2 {
-                /*                 font-size: 2rem !important;
-  */
-            }
-        }
+        .description {}
 
         .container-descript-gral {
 
@@ -1572,7 +1747,6 @@
             justify-content: center;
             flex-direction: column;
             gap: 10px !important;
-            margin-bottom: 20px;
         }
 
         .container-descript-gral {
@@ -1804,7 +1978,6 @@
             justify-content: center;
             flex-direction: column;
             gap: 10px !important;
-            margin-bottom: 30px;
         }
 
         .container-descript-gral {
@@ -2058,8 +2231,6 @@
             /* Make visible when in view */
         }
     }
-
-    ;
 
 
 

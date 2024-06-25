@@ -192,12 +192,12 @@
 
 
     <div class="section-buscador-desktop text-light d-none d-lg-block ">
-      <h6 class="text-center">Encontrá tu neumático</h6>
+      <h4 class="text-center">Encontrá tu neumático</h4>
       <div class="container">
         <form class="d-flex gap-2 justify-content-center">
           <!-- Sección -->
           <div class="form-group">
-            <select class="form-select" name="seccion">
+            <select class="form-select btn-custom" name="seccion">
               <option selected>Sección</option>
               <option value="205">205</option>
               <option value="185">185</option>
@@ -207,7 +207,7 @@
           </div>
           <!-- Perfil -->
           <div class="form-group ">
-            <select class="form-select" name="perfil">
+            <select class="form-select btn-custom" name="perfil">
               <option selected>Perfil</option>
               <option value="55">55</option>
               <option value="65">65</option>
@@ -217,7 +217,7 @@
           </div>
           <!-- Llanta -->
           <div class="form-group ">
-            <select class="form-select" name="llanta">
+            <select class="form-select btn-custom" name="llanta">
               <option selected>Llanta</option>
               <option value="16">16</option>
               <option value="15">15</option>
@@ -227,7 +227,7 @@
           </div>
           <!-- Botón de búsqueda -->
           <div class="form-group">
-            <button class="btn btn-danger" type="submit">Buscar</button>
+            <div class="btn-custom buscar" type="submit">Buscar</div>
           </div>
         </form>
       </div>
@@ -235,12 +235,12 @@
   </div>
   <!-- BUSCADOR-MOBILE -->
   <div class="section-buscador-mobile bg-dark text-light d-block d-lg-none mt-5  ">
-    <h2 class="text-center">Encontrá tu neumático</h2>
+    <h4 class="text-center">Encontrá tu neumático</h4>
     <div class="container-fluid">
       <form class="d-flex flex-column align-items-center ">
         <!-- Sección -->
-        <div class="form-group">
-          <select class="form-select" name="seccion">
+        <div class="form-group ">
+          <select class="form-select btn-custom " name="seccion">
             <option selected>Sección</option>
             <option value="205">205</option>
             <option value="185">185</option>
@@ -250,7 +250,7 @@
         </div>
         <!-- Perfil -->
         <div class="form-group ">
-          <select class="form-select" name="perfil">
+          <select class="form-select btn-custom" name="perfil">
             <option selected>Perfil</option>
             <option value="55">55</option>
             <option value="65">65</option>
@@ -260,7 +260,7 @@
         </div>
         <!-- Llanta -->
         <div class="form-group ">
-          <select class="form-select" name="llanta">
+          <select class="form-select btn-custom" name="llanta">
             <option selected>Llanta</option>
             <option value="16">16</option>
             <option value="15">15</option>
@@ -269,9 +269,12 @@
           </select>
         </div>
         <!-- Botón de búsqueda -->
+
         <div class="form-group">
-          <button class="btn btn-danger" type="submit">Buscar</button>
+          <div class=" btn-custom buscar" type="submit">Buscar</div>
         </div>
+
+
       </form>
     </div>
   </div>
@@ -288,7 +291,7 @@
 
 
 
-  <div style="margin-top: 75px; " class="container-fluid ">
+  <div style="margin-top: 75px;  " class=" ">
 
     <h2 style="margin-bottom: 50px;" class="text-center text-light title-slider  ">Un neumático para cada camino</h2>
 
@@ -324,7 +327,7 @@
               <!-- Utiliza las clases de Bootstrap para ocultar en móviles y mostrar en tamaños mayores -->
               <!--   <p class="d-none d-md-block">Some representative placeholder content for the first slide.</p> -->
 
-              <a href="autos.html" class="btn btn-danger ">Ver más</a>
+              <a href="autos.html" class="btn-custom btn ">Ver más</a>
 
 
 
@@ -347,7 +350,7 @@
               <!-- Utiliza las clases de Bootstrap para ocultar en móviles y mostrar en tamaños mayores -->
               <!--   <p class="d-none d-md-block">Some representative placeholder content for the first slide.</p> -->
 
-              <a href="camionetas.html" class="btn btn-danger ">Ver más</a>
+              <a href="camionetas.html" class="btn-custom btn ">Ver más</a>
 
 
 
@@ -368,7 +371,7 @@
               <!-- Utiliza las clases de Bootstrap para ocultar en móviles y mostrar en tamaños mayores -->
               <!--   <p class="d-none d-md-block">Some representative placeholder content for the first slide.</p> -->
 
-              <a href="utilitarios.html" class="btn btn-danger ">Ver más</a>
+              <a href="utilitarios.html" class="btn-custom btn">Ver más</a>
 
 
 
@@ -382,7 +385,7 @@
 
             <div class="carousel-caption ">
               <h3 class="
-                animate__zoomIn animate__animated   animation-title-h3 position-h3">Camión
+                animate__zoomIn animate__animated   animation-title-h3 position-h3">Camiones
               </h3>
 
               <img class="img-fluid animate__animated   animate__zoomIn   d-block img-camion"
@@ -391,7 +394,7 @@
               <!-- Utiliza las clases de Bootstrap para ocultar en móviles y mostrar en tamaños mayores -->
               <!--   <p class="d-none d-md-block">Some representative placeholder content for the first slide.</p> -->
 
-              <a href="autos.html" class="btn btn-danger ">Ver más</a>
+              <a href="autos.html" class="btn-custom btn ">Ver más</a>
 
 
 
@@ -2045,8 +2048,35 @@
 
   </script>
 
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+  const selects = document.querySelectorAll('.form-select');
+
+  selects.forEach(select => {
+    // Toggle show class on hover
+    select.addEventListener('mouseenter', function() {
+      select.classList.add('show');
+    });
+
+    select.addEventListener('mouseleave', function() {
+      select.classList.remove('show');
+    });
+
+    // Toggle show class on click
+    select.addEventListener('click', function() {
+      if (select.classList.contains('show')) {
+        select.classList.remove('show');
+      } else {
+        select.classList.add('show');
+      }
+    });
+  });
+});
 
 
+
+</script>
 
 
 

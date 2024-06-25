@@ -23,8 +23,11 @@
     <!--=============== SWIPER MIN CSS ===============-->
     <!--     <link rel="stylesheet" href="css/swiper-bundle.min.css">
  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!--=============== SWIPER MIN CSS ===============-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!--     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+ -->
     <!--=============== LIGTHBOX ===============-->
 
 
@@ -47,10 +50,12 @@
 
 
 
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
 
 
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
 
 
 
@@ -241,6 +246,12 @@
 
 
 
+                    <div data-aos="fade-down" id="elementoAnimado1" class="picture-ciudad"></div>
+                    <div data-aos="fade-left" id="elementoAnimado2" class="picture-ciudad"></div>
+
+
+
+
                 </div>
 
                 <p>
@@ -331,11 +342,6 @@
         <div class="modal-dialog modal-dialog-centered">
 
             <div class="modal-content">
-                <!--  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-
-                </div> -->
-
                 <div class="modal-body">
 
 
@@ -346,8 +352,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <!--                     <button type="button" class="btn btn-primary">Guardar imagen</button>
- -->
+
                 </div>
             </div>
         </div>
@@ -578,43 +583,52 @@
 
 
 
+        <div class="container-tire-position-gral">
+
+
+            <h2>POSICIONES SUGERIDAS</h2>
 
 
 
-        <div class="tire-position">
+
+            <div class="tire-position">
 
 
 
 
-            <picture data-aos="fade-left">
-                <img src="assets/images/icon-position/Icons_Small_Cargo_AP.svg" alt="">
-            </picture>
+                <picture data-aos="fade-left">
+                    <img src="assets/images/icon-position/Icons_Bus_AP.svg" alt="">
+                </picture>
 
-            <picture data-aos="fade-left">
-                <img src="assets/images/icon-position/Icons_Pick_UP_AP.svg" alt="">
-            </picture>
+            <!--     <picture data-aos="fade-left">
+                    <img src="assets/images/icon-position/Icons_Pick_UP_AP.svg" alt="">
+                </picture>
 
-            <picture data-aos="fade-left">
-                <img src="assets/images/icon-position/Icons_Mini_Bus_AP.svg" alt="">
-            </picture>
-
-
-
-        </div>
-
-        <div class="legend">
-
-            <div class="recomendable">
+                <picture data-aos="fade-left">
+                    <img src="assets/images/icon-position/Icons_Mini_Bus_AP.svg" alt="">
+                </picture>
+ -->
 
 
-                <span class="icon recommendable"></span> Posición Recomendada
             </div>
 
-            <div class="alternativa">
 
-                <span class="icon available"></span> Posición Alternativa
+
+            <div class="legend">
+
+                <div class="recomendable">
+
+
+                    <span class="icon recommendable"></span>Recomendada
+                </div>
+
+                <div class="alternativa">
+
+                    <span class="icon available"></span>Alternativa
+                </div>
             </div>
         </div>
+
 
 
 
@@ -1038,6 +1052,9 @@
 
     <div class="container-otros_diseños">
 
+
+        <h2>Otros diseños ciudad</h2>
+
         <div class="swiper carousel-autos-gral">
 
             <div class="swiper-wrapper">
@@ -1068,12 +1085,12 @@
 
         </div>
 
- <!-- Indicadores de paginación -->
- <div class="swiper-pagination"></div>
+        <!-- Indicadores de paginación -->
+        <div class="swiper-pagination"></div>
 
- <!-- Controles de navegación -->
- <div class="swiper-button-next"></div>
- <div class="swiper-button-prev"></div>
+        <!-- Controles de navegación -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
 
 
@@ -1269,13 +1286,7 @@
 
     </div>
 
-
-
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 
 
 
@@ -1389,9 +1400,9 @@
 
     <!--   SWIPER MIN   -->
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
+    <!--     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ -->
+    <script src="js/swiper-bundle.min.js"></script>
 
 
 
@@ -1403,7 +1414,7 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-                                spaceBetween: 30,
+            spaceBetween: 30,
 
 
             pagination: {
@@ -1516,6 +1527,7 @@
 
 
     </script>
+
 
 
 

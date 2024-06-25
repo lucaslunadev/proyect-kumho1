@@ -4,9 +4,10 @@
 
 
 .section-tecnologia-rendimiento-confort {
-  height:900px;
-  max-width: 95%;
-  margin: 0 auto;
+  height:650px!important;
+/*   max-width: 80%;
+ */
+ width: 80%; margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -324,7 +325,7 @@ box-shadow: inset 0 0 600px black
         width: 200px;
 
         .text-confort {
-          left: -35px;
+          left: -10px;
 
         }
 
@@ -335,7 +336,7 @@ box-shadow: inset 0 0 600px black
 
 
           h2 {
-            font-size: 20px;
+            font-size: 20px!important;
             margin-bottom: -2px;
           }
 

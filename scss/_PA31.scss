@@ -21,6 +21,32 @@
 
 
 
+     @media screen and (min-width: 1000px) {
+
+        #elementoAnimado1 {
+            display: none;
+
+
+        }
+
+    }
+
+    @media screen and (max-width: 1000px) {
+
+
+        .desing-modelo {
+/*             flex-direction: column-reverse !important;
+ */        }
+
+        #elementoAnimado2 {
+            display: none;
+
+
+        }
+
+    }
+
+
 
 
 
@@ -1535,8 +1561,10 @@
          }
 
          .fila-1 {
-             margin-top: 50px;
-             width: 100%;
+/*              margin-top: 50px;
+ */
+
+   width: 100%;
              flex-direction: column !important;
 
              .img-description {
@@ -1773,7 +1801,7 @@
 
          .description {
              width: 100% !important;
-             margin: 0 auto !important;
+             margin: 40px auto 0px auto !important;
 
 
 

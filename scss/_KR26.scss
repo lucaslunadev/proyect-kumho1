@@ -28,6 +28,32 @@
 
 
 
+     @media screen and (min-width: 1000px) {
+
+        #elementoAnimado1 {
+            display: none;
+
+
+        }
+
+    }
+
+    @media screen and (max-width: 1000px) {
+
+
+        .desing-modelo {
+/*             flex-direction: column-reverse !important;
+ */        }
+
+        #elementoAnimado2 {
+            display: none;
+
+
+        }
+
+    }
+
+
 
 
 
