@@ -1,7 +1,23 @@
 
+
+@import '../node_modules/aos/dist/aos.css';
+
+
 @import 'custom-bootstrap-variables';
+
+
+@import '../node_modules/swiper/swiper.scss';
+
+
+
+
 @import "../node_modules/bootstrap/scss/bootstrap";
+
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+
+
+
 @import 'colores';
 @import 'fonts';
 @import 'mixins';
@@ -15,6 +31,9 @@
 @import 'section-footer';
 @import 'section-copyright';
 @import 'modales';
+
+
+
 @import 'modal-disenos-neumaticos';
 @import 'style-ecsta';
 @import 'style-ecowing';

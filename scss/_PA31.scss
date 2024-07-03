@@ -1,12 +1,12 @@
 .PA31 {
-
-    color: white;
+    color: black;
     background-color: white;
     // Breakpoints
     $breakpoint-sm: 576px;
     $breakpoint-md: 768px;
     $breakpoint-lg: 992px;
     $breakpoint-xl: 1200px;
+
 
 
 
@@ -118,6 +118,8 @@
     .section-header {
         background-color: black;
         position: relative;
+        color: white;
+
 
         .encabezado {
             width: 80%;
@@ -132,7 +134,6 @@
 
                 .desing-modelo {
                     margin-bottom: 16px;
-
                     display: flex;
                     gap: 20px;
 
@@ -170,12 +171,15 @@
 
                     .desing-modelo {
                         justify-content: center;
-                        flex-direction: column;
-                        align-items: center;
+
 
                         h1 {
                             font-size: 3.5rem;
                         }
+
+
+
+
 
                     }
 
@@ -201,7 +205,25 @@
 
     }
 
-    @media screen and (max-width:$breakpoint-md) {}
+    @media screen and (max-width:$breakpoint-sm) {
+
+        .container-descript-gral {
+
+
+            .desing-modelo {
+                margin-bottom: 0px;
+                flex-direction: column;
+                align-items: center;
+
+
+            }
+
+        }
+
+
+
+
+    }
 
 
 
@@ -212,7 +234,6 @@
 
             .btn-custom {
                 a {
-                    font-size: .8rem !important;
                 }
             }
         }
@@ -224,17 +245,13 @@
                 .container-descript-gral {
 
 
-                    p {
-                        font-size: 1rem;
-                    }
-
 
                     .desing-modelo {
                         margin-bottom: 0px;
-                        img
-                        {
-width: 200px!important;
-height: 30px!important;
+
+                        img {
+                            width: 200px !important;
+                            height: 30px !important;
 
                         }
 
@@ -243,28 +260,13 @@ height: 30px!important;
 
                     }
 
-                    .container-buttons {}
+
                 }
 
-                .container-img {}
 
-                .container-descript-gral {}
             }
 
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }
@@ -326,8 +328,8 @@ height: 30px!important;
     .container-rows {
         background-color: white;
         color: black;
-        z-index: 10;
         position: relative;
+        margin-top: -1px;
 
         .fila-gral {
             display: flex;
@@ -379,7 +381,7 @@ height: 30px!important;
     .fila-3 {
         flex-direction: column;
 
-        gap: 100px !important;
+        gap: 50px !important;
 
         .video-container {
             video {
@@ -426,9 +428,7 @@ height: 30px!important;
                 width: 100%;
                 gap: 100px;
 
-                .fila-1 {
-
-                }
+                .fila-1 {}
 
                 .description {
                     width: 90%;
@@ -465,7 +465,7 @@ height: 30px!important;
 
     @media screen and (max-width: $breakpoint-sm ) {
         .fila-1 {
-         padding-top: 50px;
+            padding-top: 50px;
         }
 
         .container-rows {}
@@ -475,17 +475,28 @@ height: 30px!important;
     //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     //SLIDER Y CARDS OTROS DISEÑOS
 
-    .container-otros_diseños {
-        position: relative;
+    .otros-diseños {
         background-color: black;
-        padding: 20px;
+        color: white;
 
+        padding-bottom: 30px;
+        text-align: center;
+        position: relative;
+
+
+        h2 {
+            padding: 20px;
+        }
 
 
         .modelo-dis {
-
             color: black;
+
+            p {
+                margin-bottom: 0px;
+            }
         }
+
 
     }
 
@@ -503,18 +514,25 @@ height: 30px!important;
     }
 
 
-    .card-fondo {
+    .swiper-slide {
         position: relative;
         text-align: center;
+
+        .modelo-dis {
+            .logo {
+                width: 150px;
+                padding-bottom: 10px;
+            }
+        }
 
     }
 
 
     /* sombra debajo del neumatico*/
-    .card-fondo::after {
+    .swiper-slide::after {
         content: '';
         position: absolute;
-        bottom: 15%;
+        bottom: 75px;
         left: 50%;
         /* Centrar la sombra horizontalmente */
         transform: translateX(-50%) scaleY(-1);
@@ -535,23 +553,52 @@ height: 30px!important;
     }
 
 
-    .card-fondo.hover::after {
+    .swiper-slide.hover::after {
         opacity: 1;
 
     }
 
 
-    .carousel-autos-gral {
-        width: 65%;
 
+    @media screen and (min-width: $breakpoint-lg) {
 
+        .swiper {
+            width: 1000px;
+
+        }
     }
 
 
-    .swiper-slide img {
-        width: 140px;
-        padding: 5px;
+    @media screen and (max-width: $breakpoint-lg) {
+
+        .swiper {
+
+            width: 700px
+        }
     }
+
+
+
+    @media screen and (max-width: $breakpoint-md) {
+
+        .swiper {
+
+            width: 500px
+        }
+    }
+
+
+    @media screen and (max-width: $breakpoint-sm) {
+
+        .swiper {
+
+            width: 250px
+        }
+    }
+
+
+
+
 
 
 
@@ -561,99 +608,96 @@ height: 30px!important;
         padding: 5px;
         border-radius: 10px;
         background-color: white;
+        height: auto;
+
+        .img-neumatico {
+
+            width: 150px;
+            margin-bottom: 10px;
+        }
     }
 
 
-    // estilos de indicadores
-    .swiper-button-prev:after,
-    .swiper-button-next:after {
-        content: "";
-    }
+
+
+
 
 
     .swiper-pagination-bullet {
         opacity: 1;
-        position: relative;
-        width: 30px;
+        width: 20px;
         /* Anchura del indicador */
-        height: 2px;
+        height: 1px;
         /* Altura del indicador */
-        margin: 5px 5px;
         /* Espacio entre indicadores */
         /*     text-indent: -999px;*/
         cursor: pointer;
         background-color: rgba(255, 255, 255, 0.5);
         /* Color de fondo de los indicadores */
-        border-radius: 1px;
         /* Bordes ligeramente redondeados */
-        transition: background-color .3s;
     }
 
     .swiper-pagination-bullet-active {
         background-color: #fff
     }
 
-    .swiper-pagination {
-        top: 15px;
-        position: relative;
-    }
 
-    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-        margin: 10px 4px
-    }
 
 
 
     .swiper-button-next,
     .swiper-button-prev {
-        position: absolute;
-        top: 50%;
-        /* Alinea los controles verticalmente en el centro del contenedor */
-        transform: translateY(-50%);
-        /* Ajusta la posición vertical */
-        z-index: 10;
-        /* Asegúrate de que los controles estén sobre las diapositivas */
+        color: $km-black;
+        /* Cambiar color */
+        background-color: rgba(255, 255, 255, 0.5);
+        /* Fondo semitransparente */
+        border-radius: 50%;
+        /* Bordes redondeados */
+        width: 50px;
+        /* Ancho fijo */
+        height: 50px;
+        /* Alto fijo */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        /* Transiciones suaves */
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 20px;
+        /* Tamaño de la flecha */
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Cambio de color de fondo en hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        /* Sombra en hover */
+        cursor: pointer;
+        /* Cambia el cursor a una mano para indicar que es clickeable */
     }
 
 
-    .swiper-button-prev {
-        left: 10px;
-        /* Alinea el botón de anterior a la izquierda */
-    }
 
 
-    .swiper-button-prev,
-    .swiper-button-next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 10;
-        margin: 0 15%;
 
-
-    }
-
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: $breakpoint-sm) {
 
         .swiper-pagination-bullet {
-            opacity: 1;
-            position: relative;
-            /* Anchura del indicador */
-            height: 2px;
-            width: 15px !important;
+
+            width: 15px;
 
         }
 
-        .carousel-autos-gral {
-            width: 70%;
-        }
 
 
     }
 
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: $breakpoint-md) {
 
         .swiper-button-next,
         .swiper-button-prev {
@@ -661,10 +705,6 @@ height: 30px!important;
         }
 
     }
-
-
-
-
 
 
 

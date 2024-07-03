@@ -1,6 +1,10 @@
 .PS91 {
 
-
+  // Breakpoints
+  $breakpoint-sm: 576px;
+  $breakpoint-md: 768px;
+  $breakpoint-lg: 992px;
+  $breakpoint-xl: 1200px;
 
     P {
         font-weight: 300;
@@ -18,12 +22,6 @@
             max-width: 1320px !important;
         }
     }
-
-
-
-
-
-
 
 
 
@@ -229,9 +227,6 @@
         justify-content: center;
     }
 
-    .img-neumatico-completo {
-        /* flex: 1; */
-    }
 
     .info {
         /* flex: 1; */
@@ -323,6 +318,11 @@
         .btn-custom {
 
             margin: 5px;
+        }
+
+
+        .btn-custom:first-child(3){
+            display: block!important;
         }
     }
 
@@ -797,66 +797,11 @@
 
 
 
-    .swiper-slide img {
-        width: 140px;
-        padding: 5px;
-    }
-
-
-
-    .swiper-slide {
-
-        box-sizing: border-box;
-        padding: 5px;
-        border-radius: 10px;
-        background-color: white;
-    }
-
-
-    .modelo-dis {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-
-    .modelo-dis .logo {
-        width: 50%;
-    }
-
-
-
-
-    .modelo-dis p {
-        font-weight: 1000;
-        font-style: italic;
-        margin: 5px;
-        color: black;
-
-    }
 
 
 
 
 
-    .img-neumatico {
-
-        transition: transform 0.3s ease, filter 0.3s ease;
-        cursor: pointer;
-
-
-    }
-
-
-
-
-
-
-
-    .img-neumatico:hover {
-        transform: translateY(-2%);
-    }
 
 
 
@@ -909,91 +854,18 @@
 
 
 
-    // estilos de indicadores
-    .swiper-button-prev:after,
-    .swiper-button-next:after {
-        content: "";
-    }
 
 
-
-    .swiper-pagination-bullet {
-        opacity: 1;
-        position: relative;
-        width: 30px;
-        /* Anchura del indicador */
-        height: 2px;
-        /* Altura del indicador */
-        margin: 5px 5px;
-        /* Espacio entre indicadores */
-        /*     text-indent: -999px;*/
-        cursor: pointer;
-        background-color: rgba(255, 255, 255, 0.5);
-        /* Color de fondo de los indicadores */
-        border-radius: 1px;
-        /* Bordes ligeramente redondeados */
-        transition: background-color .3s;
-    }
-
-    .swiper-pagination-bullet-active {
-        background-color: #fff
-    }
-
-    .swiper-pagination {
-        top: 15px;
-        position: relative;
-    }
-
-    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-        margin: 10px 4px
-    }
-
-
-    /* For medium devices */
-    @media screen and (min-width: 768px) {
-
-
-        .swiper-button-next,
-        .swiper-button-prev {}
-    }
 
     .carousel-autos-gral {
         //  position: relative;
         /* Asegúrate de que el contenedor tenga una posición definida */
     }
 
-    .swiper-button-next,
-    .swiper-button-prev {
-        position: absolute;
-        top: 50%;
-        /* Alinea los controles verticalmente en el centro del contenedor */
-        transform: translateY(-50%);
-        /* Ajusta la posición vertical */
-        z-index: 10;
-        /* Asegúrate de que los controles estén sobre las diapositivas */
-    }
-
-
-    .swiper-button-prev {
-        left: 10px;
-        /* Alinea el botón de anterior a la izquierda */
-    }
 
 
 
 
-    .swiper-button-prev,
-    .swiper-button-next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 10;
-        //  background-color: red;
-        margin: 0 15%;
-
-
-    }
 
 
 
@@ -1183,14 +1055,6 @@
             }
         }
 
-        .swiper-pagination-bullet {
-            opacity: 1;
-            position: relative;
-            /* Anchura del indicador */
-            height: 2px;
-            width: 15px !important;
-
-        }
 
         .carousel-autos-gral {
             width: 70%;
@@ -1385,16 +1249,7 @@
     }
 
 
-    @media screen and (max-width: 1000px) {
 
-        .swiper-button-next,
-        .swiper-button-prev {
-            display: none;
-        }
-
-
-
-    }
 
 
     @media screen and (max-width: 400px) {
@@ -1731,9 +1586,8 @@
 
 
 
-            .btn-2 {}
 
-            .btn-3 {}
+
         }
 
         .container-img {
@@ -2357,6 +2211,267 @@
 
         width: 100%;
 
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .otros-diseños {
+        background-color: black;
+        color: white;
+
+        padding-bottom: 30px;
+        text-align: center;
+        position: relative;
+
+
+        h2 {
+            padding: 20px;
+        }
+
+
+        .modelo-dis {
+            color: black;
+
+            p {
+                margin-bottom: 0px;
+            }
+        }
+
+
+    }
+
+    .img-neumatico {
+
+        transition: transform 0.3s ease, filter 0.3s ease;
+        cursor: pointer;
+
+
+    }
+
+
+    .img-neumatico:hover {
+        transform: translateY(-2%);
+    }
+
+
+    .swiper-slide {
+        position: relative;
+        text-align: center;
+
+        .modelo-dis {
+            .logo {
+                width: 150px;
+                padding-bottom: 10px;
+            }
+        }
+
+    }
+
+
+    /* sombra debajo del neumatico*/
+    .swiper-slide::after {
+        content: '';
+        position: absolute;
+        bottom: 75px;
+        left: 50%;
+        /* Centrar la sombra horizontalmente */
+        transform: translateX(-50%) scaleY(-1);
+        width: 50%;
+        /* Ancho de la sombra */
+        height: 4%;
+        /* Altura de la sombra */
+        background: rgba(0, 0, 0, 1);
+        filter: blur(0.25rem);
+        /* Color de la sombra */
+        border-radius: 50%;
+        opacity: 0;
+        /* Inicialmente oculto */
+        transition: opacity 0.3s ease;
+        /* Transición suave para la opacidad */
+        z-index: 9999;
+
+    }
+
+
+    .swiper-slide.hover::after {
+        opacity: 1;
+
+    }
+
+
+
+    @media screen and (min-width: $breakpoint-lg) {
+
+        .swiper {
+            width: 1000px;
+
+        }
+    }
+
+
+    @media screen and (max-width: $breakpoint-lg) {
+
+        .swiper {
+
+            width: 700px
+        }
+    }
+
+
+
+    @media screen and (max-width: $breakpoint-md) {
+
+        .swiper {
+
+            width: 500px
+        }
+    }
+
+
+    @media screen and (max-width: $breakpoint-sm) {
+
+        .swiper {
+
+            width: 250px
+        }
+    }
+
+
+
+
+
+
+
+    .swiper-slide {
+
+        box-sizing: border-box;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: white;
+        height: auto;
+
+        .img-neumatico {
+
+            width: 150px;
+            margin-bottom: 10px;
+        }
+    }
+
+
+
+
+
+
+
+    .swiper-pagination-bullet {
+        opacity: 1;
+        width: 20px;
+        /* Anchura del indicador */
+        height: 1px;
+        /* Altura del indicador */
+        /* Espacio entre indicadores */
+        /*     text-indent: -999px;*/
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.5);
+        /* Color de fondo de los indicadores */
+        /* Bordes ligeramente redondeados */
+    }
+
+
+
+    .swiper-pagination-bullet-active {
+        background-color: #fff
+    }
+
+
+
+
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: $km-black;
+        /* Cambiar color */
+        background-color: rgba(255, 255, 255, 0.5);
+        /* Fondo semitransparente */
+        border-radius: 50%;
+        /* Bordes redondeados */
+        width: 50px;
+        /* Ancho fijo */
+        height: 50px;
+        /* Alto fijo */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        /* Transiciones suaves */
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 20px;
+        /* Tamaño de la flecha */
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Cambio de color de fondo en hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        /* Sombra en hover */
+        cursor: pointer;
+        /* Cambia el cursor a una mano para indicar que es clickeable */
+    }
+
+
+
+
+
+    @media screen and (max-width: $breakpoint-sm) {
+
+        .swiper-pagination-bullet {
+
+            width: 15px;
+
+        }
+
+
+
+    }
+
+
+    @media screen and (max-width: $breakpoint-md) {
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: none;
+        }
 
     }
 

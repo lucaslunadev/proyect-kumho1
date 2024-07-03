@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
-  <!--   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
   <title>Kumho</title>
   <link rel="icon" type="image/png" href="assets/images/logo-kumho-guerrini/favicon-kumho.png">
 
-  <link rel="icon" type="image/png" href="favicon.png"> <!-- Asegúrate de que la ruta al favicon sea correcta -->
   <link rel="stylesheet" href="css/style.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -19,41 +15,13 @@
   <!--=============== REMIXICONS ===============-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
 
-
   <!--=============== SWIPER MIN CSS ===============-->
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
 
   <!--=============== LIGTHBOX ===============-->
 
 
-  <link href="path/to/lightbox.css" rel="stylesheet" />
-
-
-
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
-
-
-  <!--=============== ANIMATION  ===============-->
-
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
-
-
-  <!--=============== SLICKY CAROUSEL  ===============-->
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
-
-
-
-
-
-
-
 
 
 </head>
@@ -264,7 +232,7 @@
 
 
 
-          <div class="btn-custom btn-2">
+          <div class="btn-custom ">
             <a href="#" id="whatsapp-share">
               <i class="bi bi-share"></i> Compartir por WhatsApp
             </a>
@@ -272,7 +240,7 @@
 
 
 
-          <div class="btn-custom btn-3">
+          <div class="btn-custom ">
             <a href="https://www.redautoshop.com.ar/products?nombre=ps71" target="_blank">
               <i class="bi bi-cart2"></i> Comprar
             </a>
@@ -323,38 +291,40 @@
 
 
 
-<!-- Modal de Bootstrap -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <!-- Modal de Bootstrap -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Vista Previa</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Vista Previa</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="img-container">
+            <img id="zoom-image" src="assets/images/sitio-autos/ecsta/ps71/img-patern.png" class="img-fluid"
+              alt="Vista previa de las especificaciones técnicas">
           </div>
-          <div class="modal-body">
-              <div class="img-container">
-                  <img id="zoom-image" src="assets/images/sitio-autos/ecsta/ps71/img-patern.png" class="img-fluid" alt="Vista previa de las especificaciones técnicas">
-              </div>
-          </div>
-          <div class="modal-footer ">
-<!--               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
- -->              <a href="assets/images/sitio-autos/ecsta/ps71/KUMHO pattern 2022-15.pdf" download="Especificaciones_Técnicas.pdf" class="btn btn-secondary ">Descargar PDF</a>
-          </div>
+        </div>
+        <div class="modal-footer ">
+          <!--               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+ --> <a href="assets/images/sitio-autos/ecsta/ps71/KUMHO pattern 2022-15.pdf" download="Especificaciones_Técnicas.pdf"
+            class="btn btn-secondary ">Descargar PDF</a>
+        </div>
       </div>
+    </div>
+
+
   </div>
 
 
-</div>
 
 
-
-
-<script>
-  document.getElementById('open-modal').addEventListener('click', function(e) {
+  <script>
+    document.getElementById('open-modal').addEventListener('click', function (e) {
       e.preventDefault();
       var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
       myModal.show();
-  });
+    });
   </script>
 
   <!-- Bootstrap Modal -->
@@ -634,12 +604,13 @@
 
       <div class="description">
 
-<!--         <h2>BAJA RESISTENCIA A LA RODADURA</h2>
+        <!--         <h2>BAJA RESISTENCIA A LA RODADURA</h2>
  -->
         <h3>Diseño de ranura</h3>
 
         <ul>
-          <li>ranura recta y profunda para una mejor maniobrabilidad y rendimiento de frenado en superficies mojadas.</li>
+          <li>ranura recta y profunda para una mejor maniobrabilidad y rendimiento de frenado en superficies mojadas.
+          </li>
 
         </ul>
 
@@ -649,7 +620,8 @@
         </h3>
 
         <ul>
-          <li> canales anchos y rectos refuerzan el rendimiento del drenaje, reduciendo la probabilidad de aquaplaning.</li>
+          <li> canales anchos y rectos refuerzan el rendimiento del drenaje, reduciendo la probabilidad de aquaplaning.
+          </li>
 
         </ul>
 
@@ -666,7 +638,8 @@
         </h3>
 
         <ul>
-          <li>Diseño seguro y estable de bloque ancho para estabilidad de conducción y rendimiento en carreteras secas. El mejor rendimiento registrado a alta velocidad gracias al diseño de bloque sólido
+          <li>Diseño seguro y estable de bloque ancho para estabilidad de conducción y rendimiento en carreteras secas.
+            El mejor rendimiento registrado a alta velocidad gracias al diseño de bloque sólido
 
           </li>
 
@@ -674,7 +647,7 @@
 
 
 
-       <!--  <h3>Decoración en la banda
+        <!--  <h3>Decoración en la banda
 
 
         </h3>
@@ -767,15 +740,15 @@
 
         <h2> Diseñado para ofrecer un rendimiento superior tanto en condiciones húmedas como secas.
         </h2>
-           <ul>
-            <li>Nuevo compuesto de banda de rodadura altamente disperso con microsílice
-            </li>
-            <li>Construcción reforzada para un manejo preciso y estabilidad incluso a altas velocidades
-            </li>
+        <ul>
+          <li>Nuevo compuesto de banda de rodadura altamente disperso con microsílice
+          </li>
+          <li>Construcción reforzada para un manejo preciso y estabilidad incluso a altas velocidades
+          </li>
 
-            <li>Resistencia mejorada al aquaplaning lateral
+          <li>Resistencia mejorada al aquaplaning lateral
 
-            </li>
+          </li>
 
 
         </ul>
@@ -799,13 +772,13 @@
 
 
 
+    <div class="otros-diseños">
+
+      <h2 class="">Otros diseños </h2>
 
 
-    <div class="container-otros_diseños">
+      <div class="swiper  slider-otros-diseños ">
 
-      <h2 class="text-light">Otros diseños </h2>
-
-      <div class="swiper  swiper-container carousel-autos-gral ">
         <div class="swiper-wrapper">
 
 
@@ -814,21 +787,19 @@
           <div class="swiper-slide">
 
 
-            <div class="card-fondo">
 
-              <a class="enlace-con-retraso" href="PS91.html"><img class="img-neumatico"
-                  src="assets/images/sitio-autos/ecsta/ps91/ps91.png" alt=""></a>
-
+            <a class="enlace-con-retraso" href="PS71.html"><img class="img-neumatico img-fluid"
+                src="assets/images/sitio-autos/ecsta/ps71/ps71.png" alt=""></a>
 
 
-              <div class="modelo-dis">
 
-                <img class="logo" src="assets/images/sitio-autos/ecsta/logo-ecsta.png" alt="">
-                <p>PS91</p>
-              </div>
+            <div class="modelo-dis">
 
-
+              <img class="logo img-fluid " src="assets/images/sitio-autos/ecsta/logo-ecsta.png" alt="">
+              <p>PS71</p>
             </div>
+
+
 
           </div>
 
@@ -838,21 +809,19 @@
           <div class="swiper-slide">
 
 
-            <div class="card-fondo">
 
-              <a class="enlace-con-retraso" href="PS31.html"><img class="img-neumatico"
-                  src="assets/images/sitio-autos/ecsta/PS31/PS31.png" alt=""></a>
-
+            <a class="enlace-con-retraso" href="PS31.html"><img class="img-neumatico img-fluid"
+                src="assets/images/sitio-autos/ecsta/PS31/PS31.png" alt=""></a>
 
 
-              <div class="modelo-dis">
 
-                <img class="logo" src="assets/images/sitio-autos/ecsta/logo-ecsta.png" alt="">
-                <p>PS31</p>
-              </div>
+            <div class="modelo-dis">
 
-
+              <img class="logo img-fluid" src="assets/images/sitio-autos/ecsta/logo-ecsta.png" alt="">
+              <p>PS31</p>
             </div>
+
+
 
           </div>
 
@@ -863,25 +832,21 @@
           <div class="swiper-slide">
 
 
-            <div class="card-fondo">
 
-              <a class="enlace-con-retraso" href="PA31.html"><img class="img-neumatico"
-                  src="assets/images/sitio-autos/ecsta/pa31/pa31.png" alt=""></a>
-
+            <a class="enlace-con-retraso" href="PS91.html"><img class="img-neumatico img-fluid"
+                src="assets/images/sitio-autos/ecsta/PS91/PS91.png" alt=""></a>
 
 
-              <div class="modelo-dis">
 
-                <img class="logo" src="assets/images/sitio-autos/ecsta/logo-ecsta.png" alt="">
-                <p>PA31</p>
-              </div>
+            <div class="modelo-dis">
 
-
+              <img class="logo img-fluid" src="assets/images/sitio-autos/ecsta/logo-ecsta.png" alt="">
+              <p>PS91</p>
             </div>
 
+
+
           </div>
-
-
 
 
 
@@ -889,51 +854,46 @@
           <div class="swiper-slide">
 
 
-            <div class="card-fondo">
 
-              <a class="enlace-con-retraso" href="PA51.html"><img class="img-neumatico"
-                  src="assets/images/sitio-autos/ecsta/PA51/PA51.png" alt=""></a>
-
+            <a class="enlace-con-retraso" href="KR26.html"><img class="img-neumatico img-fluid"
+                src="assets/images/sitio-autos/sense/KR26/KR26.png" alt=""></a>
 
 
-              <div class="modelo-dis">
 
-                <img class="logo" src="assets/images/sitio-autos/ecsta/logo-ecsta.png" alt="">
-                <p>PA51</p>
-              </div>
+            <div class="modelo-dis">
 
-
+              <img class="logo img-fluid"
+                src="assets/images/sitio-autos/sense/Logos_variables_kumho_large4 recortado.png" alt="">
+              <p>KR26</p>
             </div>
 
+
+
           </div>
-
-
-
-
 
 
 
           <div class="swiper-slide">
 
 
-            <div class="card-fondo">
 
-              <a class="enlace-con-retraso" href="HS52.html"><img class="img-neumatico"
-                  src="assets/images/sitio-autos/ecsta/HS52/HS52.png" alt=""></a>
-
+            <a class="enlace-con-retraso" href="PA31.html"><img class="img-neumatico img-fluid"
+                src="assets/images/sitio-autos/ecstA/pa31/pa31.png" alt=""></a>
 
 
-              <div class="modelo-dis">
 
-                <img class="logo" src="assets/images/sitio-autos/ecsta/logo-ecsta.png" alt="">
-                <p>HS52</p>
+            <div class="modelo-dis">
 
-              </div>
-
-
+              <img class="logo img-fluid" src="assets/images/sitio-autos/ecsta/logo-ecsta.png" alt="">
+              <p>HS52</p>
             </div>
 
+
+
           </div>
+
+
+
 
 
 
@@ -961,21 +921,19 @@
           <div class="swiper-slide">
 
 
-            <div class="card-fondo">
 
-              <a class="enlace-con-retraso" href="KH27.html"><img class="img-neumatico"
-                  src="assets/images/sitio-autos/ecowing/KH27/KH27.png" alt=""></a>
-
+            <a class="enlace-con-retraso" href="KH27.html"><img class="img-neumatico img-fluid"
+                src="assets/images/sitio-autos/ecowing/KH27/KH27.png" alt=""></a>
 
 
-              <div class="modelo-dis">
 
-                <img class="logo" src="assets/images/sitio-autos/ecowing/logo-ecowing-recortado.png" alt="">
-                <p>KH27</p>
-              </div>
+            <div class="modelo-dis">
 
-
+              <img class="logo img-fluid" src="assets/images/sitio-autos/ecowing/logo-ecowing-recortado.png" alt="">
+              <p>KH27</p>
             </div>
+
+
 
           </div>
 
@@ -1006,26 +964,49 @@
           <div class="swiper-slide">
 
 
-            <div class="card-fondo">
 
-              <a class="enlace-con-retraso" href="ES31.html"><img class="img-neumatico"
-                  src="assets/images/sitio-autos/ecowing/ES31/ES31.png" alt=""></a>
-
+            <a class="enlace-con-retraso" href="ES31.html"><img class="img-neumatico img-fluid"
+                src="assets/images/sitio-autos/ecowing/ES31/ES31.png" alt=""></a>
 
 
-              <div class="modelo-dis">
 
-                <img class="logo" src="assets/images/sitio-autos/ecowing/logo-ecowing-recortado.png" alt="">
-                <p>ES31</p>
-              </div>
+            <div class="modelo-dis">
 
-
+              <img class="logo img-fluid" src="assets/images/sitio-autos/ecowing/logo-ecowing-recortado.png" alt="">
+              <p>ES31</p>
             </div>
+
+
 
           </div>
 
 
 
+
+
+
+
+
+
+
+          <div class="swiper-slide">
+
+
+
+            <a class="enlace-con-retraso" href="TA31.html"><img class="img-neumatico img-fluid"
+                src="assets/images/sitio-autos/solus/TA31/TA31.png" alt=""></a>
+
+
+
+            <div class="modelo-dis">
+
+              <img class="logo img-fluid" src="assets/images/sitio-autos/solus/logo-solus-recorte.png" alt="">
+              <p>TA31</p>
+            </div>
+
+
+
+          </div>
 
 
 
@@ -1042,105 +1023,42 @@
           <div class="swiper-slide">
 
 
-            <div class="card-fondo">
 
-              <a class="enlace-con-retraso" href="TA31.html"><img class="img-neumatico"
-                  src="assets/images/sitio-autos/solus/TA31/TA31.png" alt=""></a>
-
+            <a class="enlace-con-retraso" href="KH32.html"><img class="img-neumatico img-fluid"
+                src="assets/images/sitio-autos/solus/KH32/KH32.png" alt=""></a>
 
 
-              <div class="modelo-dis">
 
-                <img class="logo" src="assets/images/sitio-autos/solus/logo-solus-recorte.png" alt="">
-                <p>TA31</p>
-              </div>
+            <div class="modelo-dis">
 
-
+              <img class="logo img-fluid" src="assets/images/sitio-autos/solus/logo-solus-recorte.png" alt="">
+              <p>KH32</p>
             </div>
 
+
+
           </div>
-
-
-
-
-
 
 
 
           <div class="swiper-slide">
 
 
-            <div class="card-fondo">
 
-              <a class="enlace-con-retraso" href="KH32.html"><img class="img-neumatico"
-                  src="assets/images/sitio-autos/solus/KH32/KH32.png" alt=""></a>
-
+            <a class="enlace-con-retraso" href="KL21.html"><img class="img-neumatico img-fluid"
+                src="assets/images/sitio-autos/solus/KL21/KL21.png" alt=""></a>
 
 
-              <div class="modelo-dis">
 
-                <img class="logo" src="assets/images/sitio-autos/solus/logo-solus-recorte.png" alt="">
-                <p>KH32</p>
-              </div>
+            <div class="modelo-dis">
 
-
+              <img class="logo img-fluid" src="assets/images/sitio-autos/solus/logo-solus-recorte.png" alt="">
+              <p>KL21</p>
             </div>
 
-          </div>
 
-
-
-
-
-
-
-
-
-
-
-          <div class="swiper-slide">
-
-
-            <div class="card-fondo">
-
-              <a class="enlace-con-retraso" href="KL21.html"><img class="img-neumatico"
-                  src="assets/images/sitio-autos/solus/KL21/KL21.png" alt=""></a>
-
-
-
-              <div class="modelo-dis">
-
-                <img class="logo" src="assets/images/sitio-autos/solus/logo-solus-recorte.png" alt="">
-                <p>KL21</p>
-              </div>
-
-
-            </div>
 
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1150,22 +1068,21 @@
 
 
 
-
+        <!-- BOTON DE NAVEGACION -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
 
 
 
       </div>
 
-      <!-- BOTON DE NAVEGACION -->
-      <div class="swiper-button-next">
-        <i class="carousel-control-next-icon"></i>
-      </div>
 
-      <div class="swiper-button-prev">
-        <i class="carousel-control-prev-icon"></i>
-      </div>
+
+
       <!-- INDICADORES -->
       <div class="swiper-pagination"></div>
+
+
 
     </div>
 
@@ -1245,7 +1162,7 @@
 
 
 
-        <a ef="https://guerrinisa.com/" target="_blank" class="container-guerrini">
+        <a href="https://guerrinisa.com/" target="_blank" class="container-guerrini">
           <p>Importador exclusivo</p>
           <img src="assets/images/logo-kumho-guerrini/logo-guerrini.svg" alt="Logo Guerrini">
         </a>
@@ -1323,9 +1240,9 @@
 
 
         <ul>
-          <li><i class="bi bi-telephone"></i><a ef="tel:0800-122-2001" target="_blank"
+          <li><i class="bi bi-telephone"></i><a href="tel:0800-122-2001" target="_blank"
               class="enlace-con-retraso">0800-122-2001</a></li>
-          <li class="li-wp"><i class="bi bi-whatsapp"></i><a ef="https://wa.me/2612052000" target="_blank"
+          <li class="li-wp"><i class="bi bi-whatsapp"></i><a href="https://wa.me/2612052000" target="_blank"
               class="enlace-con-retraso">261 205-2000</a></li>
         </ul>
 
@@ -1360,7 +1277,7 @@
         <p>Importador exclusivo</p>
 
 
-        <a style="" ef="https://guerrinisa.com/" target="_blank" class="guerrini-sm">
+        <a style="" href="https://guerrinisa.com/" target="_blank" class="guerrini-sm">
           <img src="assets/images/logo-kumho-guerrini/logo-guerrini.svg" alt="">
         </a>
       </div>
@@ -1374,9 +1291,9 @@
 
 
         <ul>
-          <li><i class="bi bi-telephone"></i><a ef="tel:0800-122-2001" target="_blank"
+          <li><i class="bi bi-telephone"></i><a href="tel:0800-122-2001" target="_blank"
               class="enlace-con-retraso">0800-122-2001</a></li>
-          <li class="li-wp"><i class="bi bi-whatsapp"></i><a ef="https://wa.me/2612052000" target="_blank"
+          <li class="li-wp"><i class="bi bi-whatsapp"></i><a href="https://wa.me/2612052000" target="_blank"
               class="enlace-con-retraso">261 205-2000</a></li>
         </ul>
 
@@ -1410,12 +1327,51 @@
 
 
 
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
+
+    <script src="node_modules/aos/dist/aos.js"></script>
+
+
+    <!--   SWIPER MIN   -->
+
+    <script src="node_modules/swiper/swiper-bundle.js"></script>
+
+
+    <!-- BOOTSTRAP  -->
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
 
 
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx AOS SCRIPT (ANIMACION DE ELEMENTOS)
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ -->
+
+    <script>
+
+      AOS.init({
+        duration: 1500,
+
+        offset: window.innerHeight * 0.1, // Offset del 40% de la altura de la ventana
+
+        /* offset: window.innerHeight / 2,  */// Offset del 50% de la altura de la ventana
+
+        once: true // Animación se ejecuta solo una vez
+      });
 
 
+
+
+    </script>
+
+
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ANIMACIÓN DE CARGA DE PUNTAJE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const options = {
@@ -1464,18 +1420,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    <!-- ENLACE CON RETRASO
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ENLACE CON RETRASO xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  -->
     <script>
       // Selecciona todos los enlaces con la clase 'enlace-con-retraso'
@@ -1500,112 +1445,75 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- JS -->
-
-
-
-
-
-
-    <script src="js/script.js"></script>
-
-
-    <!--   SWIPER MIN   -->
-
-    <script src="js/swiper-bundle.min.js"></script>
-
-
-
-
-
-    <!--   SWIPER SCRIPT   -->
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SWIPER SCRIPT xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ -->
     <script>
-      var swiper1 = new Swiper(".carousel-autos-gral", {
-        loop: true,
-
-        /*   wrapperClass: 'swiper-wrapper', */ // Clase del contenedor de las diapositivas
-        /* slideClass: 'swiper-slide' */ // Clase de cada diapositiva
-        grabCursor: true,
-        spaceBetween: 60,
-
-        autoplay: {
-          delay: 4500, // El delay en milisegundos entre cambios de slide
-          disableOnInteraction: false, // Esto permite que el autoplay continúe después de que el usuario interactúe con el slider
-        },
-
-
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          dynamicBullets: false,
-
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-
-
-        breakpoints: {
-
-          0: {
-            slidesPerView: 1, // Cambia para ajustar cuántos slides se ven a la vez en pantallas de 750px de ancho
-            spaceBetween: 60, // Ajusta el espacio entre slides para este breakpoint
+      var swiper = new Swiper('.slider-otros-diseños',
+        {
+          slidesPerView: 1, // Inicialmente 1 slide visible
+          spaceBetween: 20, // Espacio entre slides (ajustado según tus necesidades)
+          loop: true, // Activa el modo bucle
+          autoplay: {
+            delay: 4000, // Intervalo de autoplay en milisegundos
+            disableOnInteraction: false, // Autoplay no se detiene cuando se interactúa
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
           },
 
-
-          100: {
-            slidesPerView: 1, // Cambia para ajustar cuántos slides se ven a la vez en pantallas de 750px de ancho
-            spaceBetween: 60, // Ajusta el espacio entre slides para este breakpoint
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
           },
 
-          400: {
-            slidesPerView: 1, // Cambia para ajustar cuántos slides se ven a la vez en pantallas de 750px de ancho
-            spaceBetween: 60, // Ajusta el espacio entre slides para este breakpoint
-          },
+          breakpoints: {
+            // Cuando el ancho de la ventana es igual o superior a 576px
+            576: {
+              slidesPerView: 2, // Mostrar 2 slides
+              spaceBetween: 40,
+            },
+            // Cuando el ancho de la ventana es igual o superior a 768px
+            768: {
+              slidesPerView: 3, // Mostrar 3 slides
+              spaceBetween: 40,
+            },
+            // Cuando el ancho de la ventana es igual o superior a 992px
+            992: {
+              slidesPerView: 4, // Mostrar 4 slides
+              spaceBetween: 40,
+            },
+            // Cuando el ancho de la ventana es igual o superior a 1200px
+            1200: {
+              slidesPerView: 4, // Mostrar 5 slides
+              spaceBetween: 40,
+            },
+            // Cuando el ancho de la ventana es igual o superior a 1400px
+            1400: {
+              slidesPerView: 4, // Mostrar 6 slides
+              spaceBetween: 40,
+            }
+          }
 
-          700: {
-            slidesPerView: 2, // Cambia para ajustar cuántos slides se ven a la vez en pantallas de 750px de ancho
-            spaceBetween: 60, // Ajusta el espacio entre slides para este breakpoint
-          },
-
-
-          1000: {
-            slidesPerView: 3, // Cambia para ajustar cuántos slides se ven a la vez en pantallas de 750px de ancho
-            spaceBetween: 60, // Ajusta el espacio entre slides para este breakpoint
-          },
-
-
-          1300: {
-            slidesPerView: 4, // Cambia para ajustar cuántos slides se ven a la vez en pantallas de 1200px de ancho
-            spaceBetween: 60, // Ajusta el espacio entre slides para este breakpoint
-          },
-
-          1600: {
-            slidesPerView: 5, // Cambia para ajustar cuántos slides se ven a la vez en pantallas de 1200px de ancho
-            spaceBetween: 60, // Ajusta el espacio entre slides para este breakpoint
-          },
-
-
-        }
-
-      });
+        });
     </script>
 
-    <!-- Dropdown HOVER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx DROPDOWN HOVER NAVBAR xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  -->
     <script>
 
@@ -1643,8 +1551,8 @@
 
 
 
-      //animation hover de neumatico
 
+      //animation hover de neumatico
 
       document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll('.img-neumatico').forEach(item => {
@@ -1652,16 +1560,16 @@
 
           // Evento para dispositivos no táctiles
           item.addEventListener('mouseenter', function () {
-            this.closest('.card-fondo').classList.add('hover');
+            this.closest('.swiper-slide').classList.add('hover');
           });
           item.addEventListener('mouseleave', function () {
-            this.closest('.card-fondo').classList.remove('hover');
+            this.closest('.swiper-slide').classList.remove('hover');
           });
 
           // Evento para dispositivos táctiles
           item.addEventListener('touchend', function (e) {
-            // Identificar el .card-fondo específico de esta imagen
-            const specificCardFondo = this.closest('.card-fondo');
+            // Identificar el .swiper-slide específico de esta imagen
+            const specificCardFondo = this.closest('.swiper-slide');
 
             // Limpiar el temporizador si ya existe uno
             clearTimeout(timeout);
@@ -1693,10 +1601,14 @@
 
 
 
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx COMPARTIR EN WP xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ -->
+
     <script>
       document.getElementById('whatsapp-share').addEventListener('click', function (event) {
         event.preventDefault();
         var message = encodeURIComponent("¡Hola! te comparto más detalle sobre nuestro neumático www.enlace-web.com.ar");
+
         var whatsappUrl = "https://api.whatsapp.com/send?text=" + message;
         window.open(whatsappUrl, '_blank');
       });
@@ -1707,7 +1619,7 @@
  -->
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        const video = document.getElementById('video-ps71');
+        const video = document.getElementById('video-pa31');
         video.play().catch(error => {
           console.error('Autoplay failed:', error);
           // Puedes mostrar un botón o mensaje para que el usuario interactúe y reproduzca el video manualmente.
@@ -1715,57 +1627,6 @@
       });
 
     </script>
-
-
-    <!-- AOS (Animate On Scroll) JS -->
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <!--     iniciar animation scroll
- -->
-    <script>
-
-      AOS.init({
-        duration: 1500,
-
-        offset: window.innerHeight * 0.1, // Offset del 40% de la altura de la ventana
-
-        /* offset: window.innerHeight / 2,  */// Offset del 50% de la altura de la ventana
-
-        once: true // Animación se ejecuta solo una vez
-      });
-
-    </script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-    <!-- LIGTHBOX SRC  -->
-
-
-    <script src="path/to/lightbox.js"></script>
-
-    <!-- BOOTSTRAP  -->
-    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>

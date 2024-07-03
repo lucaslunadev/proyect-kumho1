@@ -1,4 +1,7 @@
 
+
+
+
 /* SECTION-MARCAS
  */
 
@@ -12,11 +15,5 @@ document.querySelector(".logos").appendChild(copy);
     e.preventDefault();
 });
  */
-
-
-
-
-
-
 
 
